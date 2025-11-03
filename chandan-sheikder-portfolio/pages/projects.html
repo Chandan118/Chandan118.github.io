@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flagship Projects | Chandan Sheikder</title>
+    <meta
+      name="description"
+      content="Featured robotics and AI projects including FormicaBot, GPS-denied navigation frameworks, assistive platforms, and aerospace sensor systems."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/animations.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body data-page="projects">
+    <header class="page-hero" id="top">
+      <div class="page-hero__overlay"></div>
+      <div class="container">
+        <nav class="nav" data-nav>
+          <a class="nav__brand" data-nav-brand href="../index.html#top">Chandan Sheikder</a>
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+          </button>
+          <div class="nav__menu" id="nav-menu" data-nav-menu>
+            <a href="../index.html#top">Home</a>
+            <a href="../index.html#vision">Vision</a>
+            <a href="../index.html#domains">Domains</a>
+            <a href="projects.html">Projects</a>
+            <a href="research.html">Research</a>
+            <a href="publications.html">Publications</a>
+            <a href="../index.html#contact">Contact</a>
+          </div>
+        </nav>
+        <div class="page-hero__headline fade-in-up">
+          <span class="page-hero__eyebrow">Robotic Systems Portfolio</span>
+          <h1 class="page-hero__title">Flagship projects translating research into deployable autonomy.</h1>
+          <p class="page-hero__lead">
+            From swarm robotics testbeds to mission-ready navigation frameworks and assistive platforms, each project
+            couples rigorous experimentation with real-world validation.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-section">
+        <div class="container">
+          <div class="page-section__header">
+            <h2>Explore by Focus</h2>
+            <p class="section__description">
+              Filter by research focus to surface relevant results. Each card links to source code,
+              publications, and demonstrations where available.
+            </p>
+          </div>
+          <div class="projects-filter">
+            <button class="filter-chip" data-filter data-filter-value="all" data-active="true">All</button>
+            <button class="filter-chip" data-filter data-filter-value="swarm">Swarm Robotics</button>
+            <button class="filter-chip" data-filter data-filter-value="navigation">Navigation</button>
+            <button class="filter-chip" data-filter data-filter-value="assistive">Assistive Systems</button>
+            <button class="filter-chip" data-filter data-filter-value="aerospace">Aerospace</button>
+            <button class="filter-chip" data-filter data-filter-value="edge-ai">Edge AI</button>
+          </div>
+
+          <div class="project-catalog">
+            <article class="project-card" data-project-card data-project-topics="swarm, edge-ai, energy">
+              <div class="project-card__header">
+                <span class="project-card__icon" aria-hidden="true">🔬</span>
+                <div>
+                  <h3>FormicaBot: Bio-inspired Swarm Robotics Platform</h3>
+                  <p class="project-card__meta">
+                    Principal Researcher &nbsp;|&nbsp; BIT Robotics Lab &nbsp;|&nbsp; 2024–Present
+                  </p>
+                </div>
+              </div>
+              <p class="project-card__summary">
+                Holistic framework closing the simulation-to-reality gap in swarm robotics through biological validation and hardware-software co-design.
+              </p>
+              <ul class="project-card__list">
+                <li>Dual-modality virtual pheromone system (optical/thermal) for resilient communication</li>
+                <li>Stochastic PDE modeling of ant foraging under environmental stressors</li>
+                <li>Edge-AI pipeline with quantized MobileNetV3 for decentralized target recognition</li>
+                <li>Bio-inspired hexapedal locomotion achieving ≤1.2W power consumption</li>
+              </ul>
+              <p class="project-card__outcomes">
+                <strong>Outcomes:</strong> 89% foraging efficiency in complex navigation • Patent pending • Publications in
+                Nature Reviews Bioengineering and Sensors.
+              </p>
+              <div class="project-card__links">
+                <a href="https://github.com/Chandan118" target="_blank" rel="noreferrer" class="accent-glow">GitHub Repository</a>
+                <a href="#" aria-disabled="true">Research Paper</a>
+                <a href="#" aria-disabled="true">Demo Video</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-project-card data-project-topics="navigation, edge-ai">
+              <div class="project-card__header">
+                <span class="project-card__icon" aria-hidden="true">🧭</span>
+                <div>
+                  <h3>Robust Navigation Framework for GPS-Denied Environments</h3>
+                  <p class="project-card__meta">
+                    Lead Developer &nbsp;|&nbsp; BIT Navigation Lab &nbsp;|&nbsp; 2023–Present
+                  </p>
+                </div>
+              </div>
+              <p class="project-card__summary">
+                Autonomy stack delivering resilient localization and planning under sensor degradation and environmental uncertainty.
+              </p>
+              <ul class="project-card__list">
+                <li>Multi-modal sensor fusion (LiDAR-IMU-Vision) with Extended Kalman Filter</li>
+                <li>Bio-inspired Ant Colony Optimization integrated with deep Q-learning</li>
+                <li>ROS 2 and Gazebo simulation with realistic perturbation modeling</li>
+                <li>Real-time SLAM and motion planning in dynamic environments</li>
+              </ul>
+              <p class="project-card__outcomes">
+                <strong>Performance:</strong> Validated in cluttered indoor/outdoor environments • Robust to sensor failure.
+              </p>
+              <div class="project-card__links">
+                <a href="https://github.com/Chandan118" target="_blank" rel="noreferrer" class="accent-glow">GitHub Repository</a>
+                <a href="#" aria-disabled="true">Conference Paper</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-project-card data-project-topics="assistive, edge-ai">
+              <div class="project-card__header">
+                <span class="project-card__icon" aria-hidden="true">🏥</span>
+                <div>
+                  <h3>Smart Wheelchair &amp; Cloud-Assistive System</h3>
+                  <p class="project-card__meta">
+                    System Architect &nbsp;|&nbsp; BIT Assistive Robotics &nbsp;|&nbsp; 2024–Present
+                  </p>
+                </div>
+              </div>
+              <p class="project-card__summary">
+                IoT-enabled assistive platform integrating real-time telemetry, adaptive control interfaces, and cloud analytics.
+              </p>
+              <ul class="project-card__list">
+                <li>Cloud-connected platform capturing high-frequency telemetry streams</li>
+                <li>Adaptive control interfaces tailored for heterogeneous user capabilities</li>
+                <li>Predictive analytics for preventive maintenance and utilization insights</li>
+                <li>Secure REST APIs enabling remote assistance workflows</li>
+              </ul>
+              <p class="project-card__outcomes">
+                <strong>Impact:</strong> Enhances independence for mobility-impaired users • Scalable monitoring for healthcare providers.
+              </p>
+              <div class="project-card__links">
+                <a href="https://github.com/Chandan118" target="_blank" rel="noreferrer" class="accent-glow">GitHub Repository</a>
+                <a href="#" aria-disabled="true">System Design</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-project-card data-project-topics="aerospace, navigation">
+              <div class="project-card__header">
+                <span class="project-card__icon" aria-hidden="true">🛰️</span>
+                <div>
+                  <h3>Aerospace Sensor Systems &amp; Reliability Analysis</h3>
+                  <p class="project-card__meta">
+                    Research Contributor &nbsp;|&nbsp; Multi-institutional Collaboration &nbsp;|&nbsp; 2021–2023
+                  </p>
+                </div>
+              </div>
+              <p class="project-card__summary">
+                Wearable monitoring and reliability evaluation frameworks for aerospace applications focused on mission assurance.
+              </p>
+              <ul class="project-card__list">
+                <li>Sensor fusion algorithms for cognitive workload assessment</li>
+                <li>Performance degradation modeling for aerospace engine diagnostics</li>
+                <li>Reliability framework recognized with IEEE IATMSI Best Paper Award</li>
+                <li>Multi-institutional publications in aerospace engineering journals</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://github.com/Chandan118" target="_blank" rel="noreferrer" class="accent-glow">GitHub Repository</a>
+                <a href="#" aria-disabled="true">Award Certificate</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section page-section--alt">
+        <div class="container">
+          <div class="page-section__header">
+            <h2>Deployment Metrics</h2>
+            <p class="section__description">
+              Quantifiable performance indicators captured across simulation, lab validation, and field trials.
+            </p>
+          </div>
+          <div class="metric-grid">
+            <article class="metric">
+              <p class="metric__value">89%</p>
+              <p class="metric__label">Foraging efficiency in adversarial swarm trials</p>
+            </article>
+            <article class="metric">
+              <p class="metric__value">&le;1.2 W</p>
+              <p class="metric__label">Average power draw for hexapedal locomotion</p>
+            </article>
+            <article class="metric">
+              <p class="metric__value">4+</p>
+              <p class="metric__label">Integrated sensing modalities per navigation stack</p>
+            </article>
+            <article class="metric">
+              <p class="metric__value">IEEE</p>
+              <p class="metric__label">Best Paper Award for reliability framework</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="container">
+          <div class="callout">
+            <h3 class="callout__title">Bring resilience to your field deployments.</h3>
+            <p class="callout__body">
+              Collaborative projects welcome across swarm robotics, autonomous navigation, and assistive technology.
+              Reach out via <a href="mailto:chandan@bit.edu.cn">email</a> to initiate a technical deep dive.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <p>&copy; <span id="year"></span> Chandan Sheikder. All rights reserved.</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="../config/site-config.js" defer></script>
+    <script src="../config/seo-config.js" defer></script>
+    <script src="../scripts/main.js" defer></script>
+    <script src="../scripts/projects.js" defer></script>
+    <script src="../scripts/analytics.js" defer></script>
+  </body>
+</html>
