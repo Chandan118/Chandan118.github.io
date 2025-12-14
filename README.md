@@ -1,31 +1,22 @@
-# Personal site (Chandan Sheikder)
+# Personal site — Chandan Sheikder
 
-Single-page profile with content pulled from your CV. Runs on plain HTML/CSS/JS, ready for GitHub Pages.
+Static, single-page profile (HTML/CSS/JS) populated with your CV, publications, patents, and links.
 
-## How to use
+## Quick start
+- **Edit content:** `index.html` (text, links, publications, patents, projects, experience). CV download points to `assets/cv.pdf`. Photo is `assets/profile.jpg` (also used as favicon).
+- **Styling:** `styles.css` (colors and spacing via `:root` variables). Fonts loaded in `index.html`.
+- **Preview locally:** `python3 -m http.server 8000` then open `http://localhost:8000`.
 
-1) **Update content (if needed)**
-   - Most details are already filled with your CV. Edit `index.html` to adjust text, links, or add more publications/projects.
-   - Replace or update `assets/cv.pdf` if you have a newer version.
+## Publish
+- Current repo URL: `https://chandan118.github.io/Chandan_Sheikder/`.
+- To serve at the root (`https://chandan118.github.io`), push the same `main` branch to a repo named `chandan118.github.io` and enable Pages (Source: `main`, Folder: `/ (root)`).
+- After pushing, wait ~1–2 minutes for GitHub Pages to deploy, then hard refresh.
 
-2) **Photo**
-   - Your current photo is in `assets/profile.jpg`. Swap it with a new one if desired.
+## Wiki
+- `WIKI_PAGE.md` contains a ready-to-paste Home page for the GitHub wiki (contact, links, full pubs, patent, editorial role, projects, experience). Copy it into the repo wiki Home page to publish it.
 
-3) **Tweak the look**
-   - Adjust colors and spacing in `styles.css` (see the `:root` variables at the top).
-   - Fonts are loaded from Google Fonts in `index.html`; you can swap them for any other web-safe fonts.
-
-4) **Preview locally**
-   - From this folder run `python3 -m http.server 8000` and visit `http://localhost:8000` in your browser.
-
-5) **Publish on GitHub Pages**
-   - Create a repository named `your-username.github.io` on GitHub.
-   - Copy these files into it, commit, and push.
-   - In repo settings, enable GitHub Pages (Source: `main` branch, `/ (root)` folder). The site will be live at `https://your-username.github.io` shortly.
-
-## Tips for good content
-
-- Keep news items to one line each and include dates.
-- For publications, add links for paper/code/project and note awards (spotlight, best paper, etc.).
-- Add tags to projects (`ML`, `Systems`, `Robotics`, etc.) to help readers scan quickly.
-- Include a short note for prospective students or collaborators in the Contact section.
+## Files
+- `index.html` — layout and content
+- `styles.css` — theme and layout
+- `main.js` — mobile nav toggle, footer year
+- `assets/` — `cv.pdf`, `profile.jpg` (favicon), placeholders
