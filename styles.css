@@ -229,6 +229,32 @@ h3 {
   transform: translateY(-1px);
 }
 
+.data-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.data-list li {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #f9fbff;
+}
+
+.item-title {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.item-meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
 .profile-card {
   background: linear-gradient(180deg, #f9fbff, #ffffff);
   border: 1px solid var(--border);
