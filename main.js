@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let current = 0;
     const duration = 30000;
     let timerId;
+    const gallerySection = document.getElementById("gallery");
 
     const renderSlide = (index) => {
       const slide = slides[index];
@@ -90,27 +91,46 @@ document.addEventListener("DOMContentLoaded", () => {
       renderSlide(current);
     };
 
-    const restartTimer = () => {
+    const stopTimer = () => {
       if (timerId) {
         clearInterval(timerId);
       }
-      timerId = window.setInterval(() => {
-        setSlide(current + 1);
-      }, duration);
+      timerId = null;
+    };
+
+    const startTimer = () => {
+      stopTimer();
+      timerId = window.setInterval(() => setSlide(current + 1), duration);
     };
 
     nextPaper?.addEventListener("click", () => {
       setSlide(current + 1);
-      restartTimer();
+      startTimer();
     });
 
     prevPaper?.addEventListener("click", () => {
       setSlide(current - 1);
-      restartTimer();
+      startTimer();
+    });
+
+    gallerySection?.addEventListener("mouseenter", stopTimer);
+    gallerySection?.addEventListener("mouseleave", startTimer);
+    gallerySection?.addEventListener("focusin", stopTimer);
+    gallerySection?.addEventListener("focusout", startTimer);
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") {
+        setSlide(current + 1);
+        startTimer();
+      }
+      if (event.key === "ArrowLeft") {
+        setSlide(current - 1);
+        startTimer();
+      }
     });
 
     setSlide(0);
-    restartTimer();
+    startTimer();
   }
 
   if (yearEl) {
