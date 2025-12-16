@@ -214,7 +214,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.setAttribute("lang", currentLang === "zh" ? "zh" : "en");
   };
 
-  if ("IntersectionObserver" in window && revealTargets.length > 0) {
+  const isSmallScreen = window.matchMedia("(max-width: 820px)").matches;
+
+  if (isSmallScreen && revealTargets.length > 0) {
+    revealTargets.forEach((el) => el.classList.add("in-view"));
+  } else if ("IntersectionObserver" in window && revealTargets.length > 0) {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -224,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       },
-      { threshold: 0.18 }
+      { threshold: 0.1, rootMargin: "0px 0px -10% 0px" }
     );
 
     revealTargets.forEach((el) => {
