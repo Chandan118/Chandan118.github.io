@@ -19,6 +19,7 @@
       <nav class="nav-links" id="nav-links" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#news">News</a>
+        <a href="#gallery">Research Gallery</a>
         <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
@@ -73,6 +74,50 @@
         </div>
         <div class="note">
           Email is the fastest way to reach me. Open to collaborations in bio-robotics and autonomous navigation.
+        </div>
+      </div>
+    </section>
+
+    <section class="card gallery" id="gallery">
+      <div class="section-header">
+        <p class="eyebrow">Research Collection</p>
+        <h2>Paper Visuals & Highlights</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-lede">
+          <p>Snapshots from my published and in-progress papers. The carousel advances automatically every 30 seconds with a smooth crossfade and ambient glow.</p>
+          <div class="lede-actions">
+            <a class="btn ghost" href="https://github.com/Chandan118/Chandan_Sheikder" target="_blank" rel="noopener">View on GitHub</a>
+            <a class="btn primary" href="https://scholar.google.com/citations?user=UWNJ6TwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          </div>
+          <div class="progress-legend">
+            <span class="dot live"></span> Live slide · rotates every 30s
+          </div>
+        </div>
+        <div class="gallery-display">
+          <div class="gallery-visual">
+            <div class="glow-ring"></div>
+            <img id="paper-image" src="figure/nature.png" alt="Research figure" loading="lazy">
+          </div>
+          <div class="gallery-meta">
+            <div class="pub-meta">
+              <span class="badge" id="paper-type">Journal</span>
+              <span class="pill" id="paper-year">2025</span>
+            </div>
+            <h3 id="paper-title">Marine-Inspired Multimodal Sensor Fusion</h3>
+            <p class="summary" id="paper-summary">Neuromorphic processing and multimodal fusion for autonomous navigation.</p>
+            <div class="tag-row" id="paper-tags"></div>
+            <div class="gallery-controls">
+              <button class="chip-button" id="prev-paper" aria-label="Previous paper">&larr; Prev</button>
+              <div class="progress-track" aria-label="Slide progress">
+                <span class="progress-fill" id="paper-progress"></span>
+              </div>
+              <button class="chip-button" id="next-paper" aria-label="Next paper">Next &rarr;</button>
+            </div>
+            <div class="link-row">
+              <a class="link-chip" id="paper-link" href="https://doi.org/10.3390/s25216627" target="_blank" rel="noopener">Read paper</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
