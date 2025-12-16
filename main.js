@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const paperProgress = document.getElementById("paper-progress");
   const nextPaper = document.getElementById("next-paper");
   const prevPaper = document.getElementById("prev-paper");
+  const revealTargets = document.querySelectorAll(".card, .hero, .gallery");
 
   const slides = [
     {
@@ -47,6 +48,27 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://github.com/Chandan118/Chandan_Sheikder",
     },
   ];
+
+  if ("IntersectionObserver" in window && revealTargets.length > 0) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.18 }
+    );
+
+    revealTargets.forEach((el) => {
+      el.classList.add("reveal");
+      observer.observe(el);
+    });
+  } else {
+    revealTargets.forEach((el) => el.classList.add("in-view"));
+  }
 
   if (galleryImage && paperTitle && paperSummary && paperTags && paperLink && paperType && paperYear && paperProgress) {
     let current = 0;
