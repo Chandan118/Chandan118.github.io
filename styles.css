@@ -753,6 +753,14 @@ h3 {
 }
 
 @media (max-width: 780px) {
+  body::before {
+    display: none;
+  }
+
+  .card {
+    box-shadow: 0 12px 28px rgba(17, 24, 39, 0.08);
+  }
+
   .nav-links {
     display: none;
     position: absolute;
