@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const langToggle = document.getElementById("lang-toggle");
   const revealTargets = document.querySelectorAll(".card, .hero, .gallery");
 
+  let rerenderGallery = null;
+
   const slides = [
     {
       title: "Bio-inspired navigation systems for robots",
@@ -280,6 +282,8 @@ document.addEventListener("DOMContentLoaded", () => {
       renderSlide(current);
     };
 
+    rerenderGallery = () => renderSlide(current);
+
     const stopTimer = () => {
       if (timerId) {
         clearInterval(timerId);
@@ -328,6 +332,9 @@ document.addEventListener("DOMContentLoaded", () => {
       currentLang = currentLang === "en" ? "zh" : "en";
       localStorage.setItem("lang", currentLang);
       applyStaticCopy();
+      if (typeof rerenderGallery === "function") {
+        rerenderGallery();
+      }
     });
   } else {
     applyStaticCopy();
