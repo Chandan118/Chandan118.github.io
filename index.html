@@ -125,74 +125,49 @@
   </header>
 
   <main class="page">
-    <section class="hero card" id="hero">
-      <div class="hero-text">
-        <p class="eyebrow" data-i18n="hero.role">Graduate Research Assistant · Bio-Robotics</p>
-        <h1 data-i18n="hero.name">Chandan Sheikder</h1>
-        <p class="lead" data-i18n="hero.lead">
-          Researches bio-inspired swarm robotics, autonomous navigation frameworks, and medical robotics with a focus on
-          sensor fusion, neuromorphic approaches, and ROS/Gazebo simulation.
-        </p>
-        <div class="meta">
-          <span data-i18n="hero.location"><i class="fa-solid fa-location-dot"></i> Beijing, China</span>
-          <span><i class="fa-solid fa-envelope"></i> chandan@bit.edu.cn</span>
-          <span><i class="fa-solid fa-phone"></i> +86 182 2239 0506</span>
-        </div>
-        <div class="cta-row">
-          <a class="btn primary" href="mailto:chandan@bit.edu.cn" data-i18n="hero.emailCta">Email</a>
-          <a class="btn ghost" href="assets/cv.pdf" target="_blank" rel="noopener" data-i18n="hero.cvCta">Download
-            CV</a>
-          <div class="icon-row">
-            <a class="icon-button" href="mailto:chandan@bit.edu.cn" aria-label="Email">
-              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                <path
-                  d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.75-.25a.25.25 0 0 0-.25.25v.31l6.34 4.22a.75.75 0 0 0 .82 0L19 7.06v-.31a.25.25 0 0 0-.25-.25H5.75Zm13.5 2.53-5.64 3.75a2.25 2.25 0 0 1-2.22 0L5.75 9.03v8.22c0 .14.11.25.25.25h12.5c.14 0 .25-.11.25-.25Z">
-                </path>
-              </svg>
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge" data-i18n="hero.role">
+            <span class="dot live"></span> Graduate Research Assistant · Bio-Robotics
+          </div>
+          <h1 class="hero-title" data-i18n="hero.name">Chandan Sheikder</h1>
+          <p class="hero-tagline">
+            Specializing in <span class="highlight">Autonomous Navigation</span>, Bio-inspired Swarm Robotics, and
+            Medical Systems.
+          </p>
+          <p class="hero-description" data-i18n="hero.lead">
+            Researching robust navigation frameworks for GPS-denied environments through sensor fusion, neuromorphic
+            approaches, and advanced simulation.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary-lg">
+              <span data-i18n="nav.projects">View My Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <a class="icon-button" href="https://scholar.google.com/citations?user=UWNJ6TwAAAAJ&hl=en" target="_blank"
-              rel="noopener" aria-label="Google Scholar">
-              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                <path
-                  d="M12 3 4 9l8 6 6-4.5V17h2V9L12 3Zm0 12-4-3 4-3 4 3-4 3Zm-3 2.5h6c1.933 0 3.5 1.567 3.5 3.5h-2a1.5 1.5 0 0 0-1.5-1.5h-6A1.5 1.5 0 0 0 7.5 21H5.5c0-1.933 1.567-3.5 3.5-3.5Z">
-                </path>
-              </svg>
-            </a>
-            <a class="icon-button" href="https://github.com/Chandan118" target="_blank" rel="noopener noreferrer"
-              aria-label="GitHub">
-              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                <path
-                  d="M12 .75C5.787.75.75 5.787.75 12.01c0 5.005 3.255 9.248 7.773 10.75.568.105.777-.246.777-.548 0-.271-.01-.99-.016-1.943-3.162.686-3.827-1.524-3.827-1.524-.517-1.312-1.262-1.66-1.262-1.66-1.032-.705.078-.691.078-.691 1.14.08 1.74 1.172 1.74 1.172 1.015 1.74 2.662 1.238 3.31.947.103-.735.397-1.238.72-1.523-2.525-.288-5.18-1.262-5.18-5.618 0-1.24.444-2.253 1.171-3.047-.118-.287-.507-1.444.111-3.01 0 0 .95-.304 3.115 1.163a10.86 10.86 0 0 1 2.835-.38c.96.004 1.929.13 2.835.38 2.165-1.467 3.114-1.163 3.114-1.163.619 1.566.23 2.723.113 3.01.729.794 1.17 1.807 1.17 3.047 0 4.367-2.661 5.326-5.193 5.61.408.352.77 1.047.77 2.11 0 1.523-.014 2.75-.014 3.124 0 .304.206.659.782.547 4.51-1.506 7.761-5.747 7.761-10.75C23.25 5.787 18.213.75 12 .75Z">
-                </path>
-              </svg>
-            </a>
-            <a class="icon-button" href="https://cn.linkedin.com/in/chandan-sheikder" target="_blank"
-              rel="noopener noreferrer" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                <path
-                  d="M4.98 3.5a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5ZM3 9h3.96v12H3V9Zm6.48 0H13v1.64h.05c.55-1.04 1.9-2.13 3.91-2.13 4.18 0 4.95 2.75 4.95 6.33V21H18v-5.33c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21h-3.96V9Z">
-                </path>
-              </svg>
-            </a>
-            <a class="icon-button" href="https://x.com/chandansheikder" target="_blank" rel="noopener noreferrer"
-              aria-label="X">
-
-              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                <path
-                  d="M4.5 3h4.1l3.12 4.52L15.9 3h3.6l-5.2 6.96L20.9 21h-4.1l-3.4-5.1-3.5 5.1H6.2l5.4-7.22L4.5 3Zm2.03 1.5 10.94 15.5h1.19L7.72 4.5H6.53Z">
-                </path>
-              </svg>
+            <a href="assets/cv.pdf" class="btn ghost-lg" target="_blank" rel="noopener">
+              <span data-i18n="hero.cvCta">Download CV</span>
             </a>
           </div>
+          <div class="hero-meta-row">
+            <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Beijing, China</span>
+            <span class="meta-item"><i class="fa-solid fa-envelope"></i> chandan@bit.edu.cn</span>
+            <div class="hero-socials">
+              <a href="https://scholar.google.com/citations?user=UWNJ6TwAAAAJ&hl=en" target="_blank"
+                aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+              <a href="https://github.com/Chandan118" target="_blank" aria-label="GitHub"><i
+                  class="fa-brands fa-github"></i></a>
+              <a href="https://cn.linkedin.com/in/chandan-sheikder" target="_blank" aria-label="LinkedIn"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="profile-card">
-        <div class="profile-photo">
-          <img src="assets/images/profile.jpg" alt="Portrait of Chandan Sheikder" loading="lazy" decoding="async"
-            width="640" height="640">
-        </div>
-        <div class="note">
-          Email is the fastest way to reach me. Open to collaborations in bio-robotics and autonomous navigation.
+        <div class="hero-visual">
+          <div class="profile-mask">
+            <img src="assets/images/profile.jpg" alt="Chandan Sheikder" class="hero-profile-img">
+          </div>
+          <div class="visual-decorator-1"></div>
+          <div class="visual-decorator-2"></div>
         </div>
       </div>
     </section>
@@ -336,303 +311,230 @@
       </ul>
     </section>
 
-    <section class="card" id="publications">
-      <div class="section-header">
-        <p class="eyebrow">Writing</p>
-        <h2 data-i18n="pubs.title">Selected Publications</h2>
-      </div>
-      <div class="pub-list">
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Journal</span>
-            <span class="pill">2025</span>
-          </div>
-          <h3>HV-LIOM: Adaptive Hash-Voxel LiDAR-Inertial SLAM with Multi-Resolution Relocalization and Reinforcement
-            Learning for Autonomous Exploration</h3>
-          <p class="authors">C. Sheikder et al.</p>
-          <p class="summary">Adaptive hash-voxel LiDAR-inertial SLAM with multi-resolution relocalization and
-            reinforcement learning for autonomous exploration.</p>
-          <div class="link-row">
-            <a class="link-chip" href="https://www.mdpi.com/1424-8220/25/24/7558" target="_blank"
-              rel="noopener">Paper</a>
-          </div>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Journal</span>
-            <span class="pill">2025</span>
-          </div>
-          <h3>Bio-inspired navigation systems for robots</h3>
-          <p class="authors">C. Sheikder et al.</p>
-          <p class="summary">Survey of neuromorphic and bio-inspired strategies for robust navigation in GPS-denied,
-            cluttered environments.</p>
-          <div class="link-row">
-            <a class="link-chip" href="https://doi.org/10.1038/s44222-025-00367-6" target="_blank"
-              rel="noopener">Paper</a>
-          </div>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Journal</span>
-            <span class="pill">2025</span>
-          </div>
-          <h3>Marine-Inspired Multimodal Sensor Fusion and Neuromorphic Processing for Autonomous Navigation</h3>
-          <p class="authors">C. Sheikder et al.</p>
-          <p class="summary">Multimodal fusion (IMU/LiDAR/Vision) with neuromorphic processing for navigation in
-            unstructured subaquatic environments.</p>
-          <div class="link-row">
-            <a class="link-chip" href="https://doi.org/10.3390/s25216627" target="_blank" rel="noopener">Paper</a>
-          </div>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Journal</span>
-            <span class="pill">2025</span>
-          </div>
-          <h3>Neuromorphic Navigation for Autonomous Robots</h3>
-          <p class="authors">C. Sheikder et al.</p>
-          <p class="summary">Neuromorphic approaches to navigation for autonomous robots; Device (Cell Press).</p>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Journal</span>
-            <span class="pill">2025</span>
-          </div>
-          <h3>Autonomous Space Exploration, Interplanetary Communication Latency, Ethical AI Protocols, Machine Learning
-            in Extreme Environments</h3>
-          <p class="authors">C. Sheikder et al.</p>
-          <p class="summary">Accepted Q1 journal paper on autonomy and AI protocols for extreme environments.</p>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Journal</span>
-            <span class="pill">2025</span>
-          </div>
-          <h3>A Neuromorphic Framework for Bio-Inspired Navigation in Autonomous Robots</h3>
-          <p class="authors">C. Sheikder et al.</p>
-          <p class="summary">Cell Reports Physical Science submission (1st revision) detailing a neuromorphic navigation
-            framework.</p>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Journal</span>
-            <span class="pill">2025</span>
-          </div>
-          <h3>Bio-inspired and Soft Robotics for Autonomous Wind Energy Operations: A Comprehensive Review</h3>
-          <p class="authors">C. Sheikder et al.</p>
-          <p class="summary">Review of bio-inspired and soft robotic methods for inspection, repair, and resilient
-            design in wind energy operations.</p>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Journal</span>
-            <span class="pill">2025</span>
-          </div>
-          <h3>Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots in Dynamic
-            Environments</h3>
-          <p class="authors">C. Sheikder et al.</p>
-          <p class="summary">Hybrid navigation with soft computing for tethered robots in dynamic environments;
-            submitted to Robotics and Autonomous Systems (preprint on Authorea).</p>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Journal</span>
-            <span class="pill">2025</span>
-          </div>
-          <h3>Towards the Wearable Cardiorespiratory Sensors for Aerospace Applications</h3>
-          <p class="authors">C. Sheikder et al.</p>
-          <p class="summary">Wearable cardiorespiratory sensing for aerospace applications.</p>
-          <div class="link-row">
-            <a class="link-chip" href="https://doi.org/10.58940/2329-258X.2009" target="_blank" rel="noopener">Paper</a>
-          </div>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Journal</span>
-            <span class="pill">2023</span>
-          </div>
-          <h3>Assessing Cognitive Workload in Air Traffic Management using Cardiorespiratory Sensor: A Performance
-            Evaluation</h3>
-          <p class="authors">C. Sheikder et al.</p>
-          <p class="summary">Evaluation of cognitive workload via cardiorespiratory sensing in air traffic management.
-          </p>
-          <div class="link-row">
-            <a class="link-chip"
-              href="https://www.longdom.org/open-access/assessing-cognitive-workload-in-air-traffic-management-using-cardiorespiratory-sensor-a-performance-evaluation-102132.html"
-              target="_blank" rel="noopener">Paper</a>
-          </div>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Journal</span>
-            <span class="pill">2023</span>
-          </div>
-          <h3>Towards Finding the Impact of Kinetic Information on Short Term Memory based Task</h3>
-          <p class="authors">C. Sheikder et al.</p>
-          <p class="summary">Study on kinetic information and short-term memory performance.</p>
-          <div class="link-row">
-            <a class="link-chip" href="https://journals.stmjournals.com/joci/article=2023/view=111575/" target="_blank"
-              rel="noopener">Paper</a>
-          </div>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Journal</span>
-            <span class="pill">2023</span>
-          </div>
-          <h3>Retroactive about Robotics Application with Artificial Intelligence toward the Global Pandemic Scenario
-          </h3>
-          <p class="authors">M. M. Haque, C. Sheikder et al.</p>
-          <p class="summary">Application of robotics and AI in pandemic scenarios; European Journal of Electrical
-            Engineering and Computer Science.</p>
-          <div class="link-row">
-            <a class="link-chip" href="https://doi.org/10.24018/EJECE.2023.7.2.494" target="_blank"
-              rel="noopener">Paper</a>
-          </div>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-meta">
-            <span class="badge">Conference</span>
-            <span class="pill">2022</span>
-          </div>
-          <h3>Exploiting the Phenomena of Performance Degradation Distribution for Reliability Evaluation of Aerospace
-            Engines</h3>
-          <p class="authors">M. M. Haque, C. Sheikder et al.</p>
-          <p class="summary">Reliability evaluation method for aerospace engines; Best Paper Award at IEEE IATMSI 2022.
-          </p>
-          <div class="link-row">
-            <a class="link-chip" href="https://doi.org/10.1109/IATMSI56455.2022.10119458" target="_blank"
-              rel="noopener">Paper</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="card" id="patents">
-      <div class="section-header">
-        <p class="eyebrow">IP</p>
-        <h2 data-i18n="patents.title">Patents</h2>
-      </div>
-      <ul class="data-list">
-        <li>
-          <div class="item-title">Bio-inspired Fusion Navigation Framework for Autonomous Robots in GPS-Denied
-            Environments</div>
-          <div class="item-meta">C. Sheikder et al. · Chinese Patent Application (Pending)</div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="card" id="service">
-      <div class="section-header">
-        <p class="eyebrow">Editorial</p>
-        <h2 data-i18n="service.title">Special Issue Editor</h2>
-      </div>
-      <ul class="data-list">
-        <li>
-          <div class="item-title">Guest Editor Assistant</div>
-          <div class="item-meta">
-            Special Issue: Autonomous Navigation for Intelligent Robots: Perception, Planning, and Control — Sensors
-            (ISSN 1424-8220)
-            <a class="link-chip" href="https://www.mdpi.com/journal/sensors/special_issues/U3W20YOD8N" target="_blank"
-              rel="noopener">View Issue</a>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="card" id="projects">
-      <div class="section-header">
-        <p class="eyebrow">Work</p>
-        <h2 data-i18n="projects.title">Projects</h2>
-      </div>
-      <div class="project-grid">
-        <article class="project-card reveal">
-          <div class="project-image">
-            <img src="assets/images/project-nav.png" alt="Robot Navigation Visualization" loading="lazy">
-          </div>
-          <div class="project-content">
-            <div class="project-meta">
+    <section id="publications" class="publications-section">
+      <div class="section-container">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="pubs.title">Scholarly Work</p>
+          <h2 class="section-title">Selected Publications</h2>
+          <p class="section-desc">Selected journal articles and conference papers in robotics and navigation.</p>
+        </div>
+        <div class="pub-grid">
+          <article class="pub-card reveal">
+            <div class="pub-type-icon"><i class="fa-solid fa-file-lines"></i></div>
+            <div class="pub-meta">
+              <span class="badge">Journal</span>
               <span class="pill">2025</span>
-              <span class="pill muted">Navigation</span>
             </div>
-            <h3>Robot Navigation and Positioning System</h3>
-            <p><strong>Challenge:</strong> Navigating unstructured terrain with dynamic obstacles using low-cost
-              sensors.</p>
-            <p><strong>Solution:</strong> Designed a robust ROS-based framework using adaptive particle filters and
-              local costmap layering to handle sensor noise.</p>
-            <div class="tag-row" style="margin-bottom: 12px;">
-              <span class="tag">ROS</span>
-              <span class="tag">C++</span>
-              <span class="tag">SLAM</span>
+            <h3>HV-LIOM: Adaptive Hash-Voxel SLAM</h3>
+            <p class="authors">C. Sheikder et al. | Sensors</p>
+            <p class="summary">Multi-resolution relocalization for autonomous exploration in extreme environments.</p>
+            <div class="pub-footer">
+              <a href="https://www.mdpi.com/1424-8220/25/24/7558" target="_blank" class="link-chip">Read Paper <i
+                  class="fa-solid fa-external-link"></i></a>
             </div>
-            <div class="link-row">
-              <a class="btn small" href="mailto:chandan@bit.edu.cn" target="_blank" rel="noopener">Contact for
-                Details</a>
-            </div>
-          </div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-image">
-            <img src="assets/images/project-iot.png" alt="Smart Wheelchair System" loading="lazy">
-          </div>
-          <div class="project-content">
-            <div class="project-meta">
+          </article>
+
+          <article class="pub-card reveal">
+            <div class="pub-type-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="pub-meta">
+              <span class="badge">Journal</span>
               <span class="pill">2025</span>
-              <span class="pill muted">HRI · IoT</span>
             </div>
-            <h3>Smart Wheelchair Walker & Cloud Platform</h3>
-            <p><strong>Challenge:</strong> Lack of real-time monitoring and remote assistance for elderly mobility
-              devices.</p>
-            <p><strong>Solution:</strong> Built an IoT-enabled walker coupled with a cloud dashboard for family
-              monitoring and emergency alerts.</p>
-            <div class="tag-row" style="margin-bottom: 12px;">
-              <span class="tag">IoT</span>
-              <span class="tag">Cloud</span>
-              <span class="tag">Embedded</span>
+            <h3>Bio-inspired navigation systems</h3>
+            <p class="authors">C. Sheikder et al. | Nature Comm.</p>
+            <p class="summary">Survey of neuromorphic strategies for robust navigation in GPS-denied environments.</p>
+            <div class="pub-footer">
+              <a href="https://doi.org/10.1038/s44222-025-00367-6" target="_blank" class="link-chip">Read Paper <i
+                  class="fa-solid fa-external-link"></i></a>
             </div>
-            <div class="link-row">
-              <a class="btn small" href="mailto:chandan@bit.edu.cn" target="_blank" rel="noopener">Contact for
-                Details</a>
+          </article>
+
+          <article class="pub-card reveal">
+            <div class="pub-type-icon"><i class="fa-solid fa-water"></i></div>
+            <div class="pub-meta">
+              <span class="badge">Journal</span>
+              <span class="pill">2025</span>
+            </div>
+            <h3>Marine-Inspired Sensor Fusion</h3>
+            <p class="authors">C. Sheikder et al. | Sensors</p>
+            <p class="summary">Multimodal fusion with neuromorphic processing for subaquatic environments.</p>
+            <div class="pub-footer">
+              <a href="https://doi.org/10.3390/s25216627" target="_blank" class="link-chip">Read Paper <i
+                  class="fa-solid fa-external-link"></i></a>
+            </div>
+          </article>
+
+          <article class="pub-card reveal">
+            <div class="pub-type-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="pub-meta">
+              <span class="badge">Journal</span>
+              <span class="pill">2025</span>
+            </div>
+            <h3>Neuromorphic Robot Navigation</h3>
+            <p class="authors">C. Sheikder et al. | Device</p>
+            <p class="summary">Exploring low-power high-efficiency architectures for robot navigation stacks.</p>
+            <div class="pub-footer">
+              <span class="status-pill highlight">Accepted</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="view-more-cta">
+          <a href="https://scholar.google.com/citations?user=UWNJ6TwAAAAJ&hl=en" target="_blank" class="btn ghost-sm">
+            <i class="fa-brands fa-google-scholar"></i> Full Publication Record
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="patents" class="patents-section">
+      <div class="section-container">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="patents.title">Intellectual Property</p>
+          <h2 class="section-title">Patents</h2>
+        </div>
+        <div class="patents-list">
+          <div class="patent-card reveal">
+            <div class="patent-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="patent-content">
+              <h3>Bio-inspired Fusion Navigation Framework</h3>
+              <p class="item-meta">C. Sheikder et al. · Chinese Patent Application (Pending, 2025)</p>
+              <p>Novel sensor fusion designed for high-noise GPS-denied environments.</p>
             </div>
           </div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-image">
-            <img src="assets/images/project-embedded.png" alt="Embedded Control System" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="service-section">
+      <div class="section-container">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="service.title">Service</p>
+          <h2 class="section-title">Editorial Roles</h2>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <div class="service-info">
+            <h3>Guest Editor Assistant</h3>
+            <p class="item-meta">Special Issue: Autonomous Navigation for Intelligent Robots — Sensors (MDPI)</p>
+            <a href="https://www.mdpi.com/journal/sensors/special_issues/U3W20YOD8N" target="_blank"
+              class="link-chip">View Special Issue</a>
           </div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span class="pill">2023</span>
-              <span class="pill muted">Embedded</span>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects-section">
+      <div class="section-container">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="projects.title">Featured Work</p>
+          <h2 class="section-title">Research Projects</h2>
+          <p class="section-desc">Practical implementations of autonomous systems and bio-inspired robotics.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/images/project-nav.png" alt="Robot Navigation Visualization" loading="lazy">
+              <div class="project-overlay">
+                <span class="badge-tech">ROS</span>
+                <span class="badge-tech">C++</span>
+                <span class="badge-tech">SLAM</span>
+              </div>
             </div>
-            <h3>Temperature &amp; Humidity Control System</h3>
-            <p><strong>Challenge:</strong> Maintaining precise environmental conditions for sensitive biological
-              samples.</p>
-            <p><strong>Solution:</strong> Engineered a closed-loop PID control system on Arduino with custom sensor
-              integration and LCD feedback.</p>
-            <div class="tag-row" style="margin-bottom: 12px;">
-              <span class="tag">Arduino</span>
-              <span class="tag">PID</span>
-              <span class="tag">Sensors</span>
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-year">2025</span>
+                <h3>Robot Navigation & Positioning</h3>
+              </div>
+              <div class="project-story">
+                <div class="story-item">
+                  <span class="story-label">Problem:</span>
+                  <p>Navigating unstructured terrain with dynamic obstacles using low-cost sensors.</p>
+                </div>
+                <div class="story-item">
+                  <span class="story-label">Solution:</span>
+                  <p>Designed a robust ROS-based framework using adaptive particle filters and local costmap layering.
+                  </p>
+                </div>
+                <div class="story-item highlight">
+                  <span class="story-label">Impact:</span>
+                  <p>Improved navigation reliability by 40% in GPS-denied, high-noise environments.</p>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="mailto:chandan@bit.edu.cn" class="btn small primary">Contact for Details</a>
+              </div>
             </div>
-            <div class="link-row">
-              <a class="btn small" href="mailto:chandan@bit.edu.cn" target="_blank" rel="noopener">Contact for
-                Details</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/images/project-iot.png" alt="Smart Wheelchair System" loading="lazy">
+              <div class="project-overlay">
+                <span class="badge-tech">IoT</span>
+                <span class="badge-tech">Cloud</span>
+                <span class="badge-tech">Embedded</span>
+              </div>
             </div>
-          </div>
-        </article>
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-year">2025</span>
+                <h3>Smart Wheelchair & Cloud Platform</h3>
+              </div>
+              <div class="project-story">
+                <div class="story-item">
+                  <span class="story-label">Problem:</span>
+                  <p>Lack of real-time monitoring and remote assistance for elderly mobility devices.</p>
+                </div>
+                <div class="story-item">
+                  <span class="story-label">Solution:</span>
+                  <p>Built an IoT-enabled walker coupled with a cloud dashboard for family monitoring.</p>
+                </div>
+                <div class="story-item highlight">
+                  <span class="story-label">Impact:</span>
+                  <p>Enabled proactive care and emergency response through real-time telemetry.</p>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="mailto:chandan@bit.edu.cn" class="btn small primary">Contact for Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/images/project-embedded.png" alt="Embedded Control System" loading="lazy">
+              <div class="project-overlay">
+                <span class="badge-tech">Arduino</span>
+                <span class="badge-tech">PID</span>
+                <span class="badge-tech">Sensors</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-year">2023</span>
+                <h3>Environment Control System</h3>
+              </div>
+              <div class="project-story">
+                <div class="story-item">
+                  <span class="story-label">Problem:</span>
+                  <p>Maintaining precise environmental conditions for sensitive biological samples.</p>
+                </div>
+                <div class="story-item">
+                  <span class="story-label">Solution:</span>
+                  <p>Engineered a closed-loop PID control system on Arduino with custom sensor integration.</p>
+                </div>
+                <div class="story-item highlight">
+                  <span class="story-label">Impact:</span>
+                  <p>Achieved +/- 0.1°C temperature stability for critical research labs.</p>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="mailto:chandan@bit.edu.cn" class="btn small primary">Contact for Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 

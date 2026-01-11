@@ -361,6 +361,16 @@ document.addEventListener("DOMContentLoaded", () => {
     yearEl.textContent = new Date().getFullYear();
   }
 
+  if (topNav) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        topNav.classList.add("scrolled");
+      } else {
+        topNav.classList.remove("scrolled");
+      }
+    });
+  }
+
   if (toggle && topNav) {
     toggle.addEventListener("click", () => {
       const isOpen = topNav.classList.toggle("nav-open");
@@ -376,10 +386,11 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-  // Active state highlighting
+
+  // Active state highlighting with Intersection Observer
   const observerOptions = {
     root: null,
-    rootMargin: "-20% 0px -70% 0px",
+    rootMargin: "-20% 0px -70% 0px", // Focus on sections in the upper-middle of the screen
     threshold: 0
   };
 
@@ -397,8 +408,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  const sectionObserver = new IntersectionObserver(observerCallback, observerOptions);
   document.querySelectorAll("section[id]").forEach(section => {
-    observer.observe(section);
+    sectionObserver.observe(section);
   });
 });
