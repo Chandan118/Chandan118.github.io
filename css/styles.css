@@ -66,7 +66,13 @@ a:hover {
 
 @media (max-width: 768px) {
   .page {
-    padding: var(--header-height) 16px 64px;
+    padding: var(--header-height) 12px 64px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: var(--header-height) 8px 48px;
   }
 }
 
@@ -90,6 +96,18 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .nav-inner {
+    padding: 14px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-inner {
+    padding: 14px 8px;
+  }
 }
 
 .brand {
@@ -1696,4 +1714,60 @@ h3 {
 .pub-card h3 a:hover,
 .footer-copyright a:hover {
   color: var(--accent);
+}
+/* --- Find Me Online social section --- */
+.find-me-online {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.social-links-title {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.social-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.social-item i {
+  font-size: 20px;
+}
+
+.social-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 480px) {
+  .social-links-grid {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .social-item {
+    width: 100%;
+    justify-content: center;
+  }
 }
