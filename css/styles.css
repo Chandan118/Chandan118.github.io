@@ -1680,8 +1680,9 @@ h3 {
 }
 
 .pub-type-icon {
-  width: 180px;
-  height: 100px;
+  width: 220px;
+  /* Even bigger */
+  height: 120px;
   background: transparent;
   border: none;
   display: flex;
