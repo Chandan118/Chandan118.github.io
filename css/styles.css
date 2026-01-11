@@ -761,15 +761,61 @@ h3 {
 
 .cta {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 18px;
+  text-align: center;
+  gap: 24px;
   background: linear-gradient(120deg, #0f7c8d, #0c5261);
   color: #ffffff;
+  padding: 48px 32px;
+}
+
+.cta>div {
+  width: 100%;
+}
+
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cta-main-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.cta-social-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.cta-social-row .icon-button {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  width: 42px;
+  height: 42px;
+}
+
+.cta-social-row .icon-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  color: #ffffff;
+}
+
+.cta-social-row .icon-button i {
+  font-size: 20px;
 }
 
 .cta p {
   color: #e2eff3;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .cta .btn {
@@ -779,7 +825,7 @@ h3 {
 
 .cta .btn.primary {
   background: #ffffff;
-  color: #0f5261;
+  color: #0c5261;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
@@ -1031,53 +1077,59 @@ h3 {
 
 .footer-social-logos {
   display: flex;
-  gap: 20px;
+  gap: 18px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social-logo {
-  font-size: 26px;
+  font-size: 22px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: var(--accent);
-  /* Default visible color */
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.2s ease, color 0.2s ease;
+  color: var(--muted);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.2s ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f1f5f9;
 }
 
 
 .social-logo:hover {
-  transform: translateY(-5px) scale(1.15);
+  transform: translateY(-5px);
   filter: brightness(1.1);
 }
 
 .social-logo.scholar {
   color: #4285F4;
+  background: #eef4ff;
 }
 
 .social-logo.linkedin {
   color: #0077B5;
+  background: #e6f7ff;
 }
 
 .social-logo.github {
   color: #181717;
+  background: #f1f2f3;
 }
 
 .social-logo.twitter {
   color: #1DA1F2;
-}
-
-.social-logo.portfolio {
-  color: #00A699;
+  background: #e8f5fd;
 }
 
 .social-logo.researchgate {
   color: #00CCBB;
+  background: #ebfcfb;
 }
 
 .social-logo.orcid {
   color: #A6CE39;
+  background: #f5f9eb;
 }
 
 
