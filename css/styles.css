@@ -873,7 +873,10 @@ h3 {
   align-items: center;
   gap: 10px;
   margin-bottom: 8px;
+  color: #000000;
+  /* Pure black as requested */
 }
+
 
 .contact-item i {
   color: var(--accent);
@@ -1034,8 +1037,15 @@ h3 {
 
 .social-logo {
   font-size: 26px;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--accent);
+  /* Default visible color */
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.2s ease, color 0.2s ease;
 }
+
 
 .social-logo:hover {
   transform: translateY(-5px) scale(1.15);
