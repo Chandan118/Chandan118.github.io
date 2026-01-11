@@ -1083,19 +1083,22 @@ h3 {
 }
 
 .social-logo {
-  font-size: 22px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: var(--muted);
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.2s ease;
-  width: 40px;
-  height: 40px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.2s ease;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: #f1f5f9;
+  padding: 10px;
 }
 
+.social-logo svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 
 .social-logo:hover {
   transform: translateY(-5px);
@@ -1104,32 +1107,32 @@ h3 {
 
 .social-logo.scholar {
   color: #4285F4;
-  background: #eef4ff;
+  background: #f0f4ff;
 }
 
 .social-logo.linkedin {
   color: #0077B5;
-  background: #e6f7ff;
+  background: #e9f5ff;
 }
 
 .social-logo.github {
   color: #181717;
-  background: #f1f2f3;
+  background: #f3f4f5;
 }
 
 .social-logo.twitter {
   color: #1DA1F2;
-  background: #e8f5fd;
+  background: #ecf7fe;
 }
 
 .social-logo.researchgate {
   color: #00CCBB;
-  background: #ebfcfb;
+  background: #edfffb;
 }
 
 .social-logo.orcid {
   color: #A6CE39;
-  background: #f5f9eb;
+  background: #f7fbeb;
 }
 
 
