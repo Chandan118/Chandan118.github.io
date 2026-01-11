@@ -1832,9 +1832,9 @@ h3 {
 }
 
 .service-icon {
-  width: 120px;
-  /* Much bigger */
-  height: 120px;
+  width: 150px;
+  /* Even bigger */
+  height: 150px;
   background: transparent;
   border: none;
   border-radius: 16px;
