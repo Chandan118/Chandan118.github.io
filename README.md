@@ -16,6 +16,19 @@
 - Neuromorphic processing for robust autonomy
 - ROS and Gazebo simulation for field robotics
 
+## Project Structure
+```
+/
+├── index.html          # Main HTML structure
+├── css/
+│   └── styles.css      # Main styles
+├── js/
+│   └── script.js       # Interactivity logic
+└── assets/
+    ├── images/         # Profile pic, project screenshots
+    └── icons/          # Favicon, SVG icons
+```
+
 ## Publications
 - 2025: Bio-inspired navigation systems for robots. DOI: https://doi.org/10.1038/s44222-025-00367-6
 - 2025: Marine-Inspired Multimodal Sensor Fusion and Neuromorphic Processing for Autonomous Navigation. DOI: https://doi.org/10.3390/s25216627

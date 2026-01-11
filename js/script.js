@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tagsZh: ["仿生机器人", "导航", "综述"],
       type: "Journal",
       year: "2025",
-      image: "figure/Bio-inspired navigation systems for robots.png",
+      image: "assets/images/Bio-inspired navigation systems for robots.png",
       alt: "Figure from bio-inspired navigation systems paper",
       link: "https://doi.org/10.1038/s44222-025-00367-6",
     },
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tagsZh: ["传感融合", "类脑", "自主导航"],
       type: "Journal",
       year: "2025",
-      image: "figure/Marine-Inspired Multimodal Sensor Fusion and Neuromorphic Processing for Autonomous Navigation.png",
+      image: "assets/images/Marine-Inspired Multimodal Sensor Fusion and Neuromorphic Processing for Autonomous Navigation.png",
       alt: "Sensor fusion workflow for autonomous navigation",
       link: "https://doi.org/10.3390/s25216627",
     },
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tagsZh: ["类脑", "SLAM", "机器人"],
       type: "Journal",
       year: "2025",
-      image: "figure/Neuromorphic Navigation for Autonomous Robots.png",
+      image: "assets/images/Neuromorphic Navigation for Autonomous Robots.png",
       alt: "Neuromorphic navigation architecture diagram",
       link: "https://github.com/Chandan118/Chandan_Sheikder",
     },
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tagsZh: ["类脑", "导航", "机器人"],
       type: "Journal",
       year: "2025",
-      image: "figure/A Neuromorphic Framework for Bio-Inspired Navigation in Autonomous Robots.png",
+      image: "assets/images/A Neuromorphic Framework for Bio-Inspired Navigation in Autonomous Robots.png",
       alt: "Neuromorphic framework for bio-inspired navigation",
       link: "mailto:chandan@bit.edu.cn",
     },
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tagsZh: ["自主性", "太空", "AI 安全"],
       type: "Journal",
       year: "2025",
-      image: "figure/Autonomous Space Exploration, Interplanetary Communication Latency.png",
+      image: "assets/images/Autonomous Space Exploration, Interplanetary Communication Latency.png",
       alt: "Autonomous space exploration and AI latency study",
       link: "mailto:chandan@bit.edu.cn",
     },
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tagsZh: ["柔性机器人", "风能", "综述"],
       type: "Journal",
       year: "2025",
-      image: "figure/Bio-inspired and Soft Robotics for Autonomous Wind Energy Operations.png",
+      image: "assets/images/Bio-inspired and Soft Robotics for Autonomous Wind Energy Operations.png",
       alt: "Soft robotics for wind energy operations overview",
       link: "mailto:chandan@bit.edu.cn",
     },
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tagsZh: ["软计算", "导航", "系缆机器人"],
       type: "Conference",
       year: "2023",
-      image: "figure/Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots.png",
+      image: "assets/images/Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots.png",
       alt: "Adaptive hybrid navigation for tethered robots",
       link: "mailto:chandan@bit.edu.cn",
     },
@@ -368,10 +368,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      topNav?.classList.remove("nav-open");
-      toggle?.setAttribute("aria-expanded", "false");
-    });
+  link.addEventListener("click", () => {
+    topNav?.classList.remove("nav-open");
+    toggle?.setAttribute("aria-expanded", "false");
   });
+});
+
+// Active state highlighting
+const observerOptions = {
+  root: null,
+  rootMargin: "-20% 0px -70% 0px",
+  threshold: 0
+};
+
+const observerCallback = (entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.getAttribute("id");
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${id}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+document.querySelectorAll("section[id]").forEach(section => {
+  observer.observe(section);
+});
 });

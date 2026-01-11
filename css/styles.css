@@ -126,6 +126,11 @@ a:hover {
   text-decoration: none;
 }
 
+.nav-links a.active {
+  color: var(--accent);
+  background: rgba(15, 124, 141, 0.12);
+}
+
 .nav-toggle {
   display: none;
   background: none;
@@ -721,6 +726,7 @@ h3 {
   from {
     transform: rotate(0deg) scale(1);
   }
+
   to {
     transform: rotate(360deg) scale(1);
   }
@@ -731,6 +737,7 @@ h3 {
     transform: translateY(10px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -738,10 +745,12 @@ h3 {
 }
 
 @keyframes soft-pop {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-6px);
   }
@@ -752,6 +761,7 @@ h3 {
     opacity: 0.15;
     transform: scale(0.99);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -762,9 +772,11 @@ h3 {
   0% {
     transform: translate3d(0, 0, 0) scale(1);
   }
+
   50% {
     transform: translate3d(-8px, 12px, 0) scale(1.05);
   }
+
   100% {
     transform: translate3d(12px, -10px, 0) scale(1.03);
   }
