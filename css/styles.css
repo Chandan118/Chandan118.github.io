@@ -1646,3 +1646,15 @@ h3 {
     font-size: 22px;
   }
 }
+.meta-item,
+.pub-card h3 a,
+.footer-copyright a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.pub-card h3 a:hover,
+.footer-copyright a:hover {
+  color: var(--accent);
+}
