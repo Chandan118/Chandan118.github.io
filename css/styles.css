@@ -1304,6 +1304,26 @@ h3 {
     margin: 0 auto;
   }
 
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-meta-row {
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero-socials {
+    margin: 0;
+  }
+
+  .meta-item,
+  .hero-socials a,
+  .nav-links a {
+    padding: 12px;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
   }
@@ -1646,6 +1666,7 @@ h3 {
     font-size: 22px;
   }
 }
+
 .meta-item,
 .pub-card h3 a,
 .footer-copyright a {
@@ -1657,4 +1678,15 @@ h3 {
 .pub-card h3 a:hover,
 .footer-copyright a:hover {
   color: var(--accent);
+}
+
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
 }
