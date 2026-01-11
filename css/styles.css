@@ -124,8 +124,8 @@ section {
 }
 
 .nav-logo {
-  height: 64px;
-  /* Increased size */
+  height: 72px;
+  /* Even bigger */
   width: auto;
   transition: transform 0.3s ease;
 }
@@ -242,11 +242,10 @@ section {
 
 /* Patent Section Updates */
 .patent-brand {
-  width: 70px;
-  /* Slightly larger */
-  height: 70px;
+  width: 90px;
+  /* Much larger */
+  height: 90px;
   background: transparent;
-  /* Removed gray box */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1959,9 +1958,12 @@ h3 {
 }
 
 .journal-icon {
-  width: 100%;
-  height: 100%;
+  width: 80px;
+  /* Much bigger */
+  height: auto;
   object-fit: contain;
+  background: transparent;
+  /* No box */
 }
 
 @media (max-width: 480px) {
