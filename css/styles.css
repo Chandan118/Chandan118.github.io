@@ -1796,6 +1796,7 @@ h3 {
     max-width: 320px !important;
   }
 }
+
 /* --- Journal Logo Styles --- */
 .pub-header {
   display: flex;
@@ -1810,24 +1811,18 @@ h3 {
   flex: 1;
 }
 
-.journal-logo {
-  height: 32px;
-  width: auto;
-  object-fit: contain;
-  opacity: 0.9;
-}
-
-.journal-logo-nature {
-  height: 48px;
-  width: auto;
-  object-fit: contain;
-  margin-top: -8px;
-}
-
+.journal-logo,
+.journal-logo-nature,
 .journal-logo-cell {
   height: 28px;
   width: auto;
   object-fit: contain;
+  opacity: 0.95;
+}
+
+.journal-logo-nature {
+  height: 32px;
+  /* Nature logo is naturally shorter/wider, slight boost */
 }
 
 .service-title-row {
@@ -1842,19 +1837,29 @@ h3 {
 }
 
 .journal-logo-sm {
-  height: 20px;
+  height: 24px;
   width: auto;
   object-fit: contain;
 }
 
 @media (max-width: 480px) {
+  section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 0;
+  }
+
   .pub-header {
     flex-direction: column-reverse;
     align-items: flex-start;
     gap: 8px;
   }
 
-  .journal-logo, .journal-logo-nature, .journal-logo-cell {
+  .journal-logo,
+  .journal-logo-nature,
+  .journal-logo-cell {
     height: 24px;
   }
 }
