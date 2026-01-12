@@ -59,7 +59,9 @@ a:hover {
 }
 
 .page {
-  max-width: 1200px;
+  max-width: 95%;
+  /* Expanded to full width as requested */
+  width: 100%;
   margin: 0 auto;
   padding: var(--header-height) 24px 96px;
 }
@@ -2031,36 +2033,7 @@ h3 {
   }
 }
 
-/* --- Desktop Contact Section Layout --- */
-@media (min-width: 768px) {
-  .cta {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-    gap: 48px;
-  }
 
-  .cta>div:first-child {
-    flex: 1;
-    text-align: left;
-  }
-
-  .cta p {
-    margin: 0;
-    margin-bottom: 8px;
-    max-width: 100%;
-  }
-
-  .cta p.contact-details {
-    margin-top: 16px;
-  }
-
-  .cta-actions {
-    align-items: flex-end;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-}
 
 /* --- Lightbox Styles --- */
 .lightbox {
