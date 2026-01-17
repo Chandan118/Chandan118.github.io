@@ -43,6 +43,8 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="styles.css" as="style">
+  <link rel="preload" as="image" href="assets/images/profile.webp">
+  <script src="js/script.js" defer></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap"
     rel="stylesheet">
@@ -114,14 +116,12 @@
       </div>
       <nav class="nav-links" id="nav-links" aria-label="Primary">
         <a href="#about" data-i18n="nav.about">About Me</a>
-
         <a href="#news" data-i18n="nav.news">News</a>
         <a href="#gallery" data-i18n="nav.gallery">Research Gallery</a>
         <a href="#publications" data-i18n="nav.publications">Publications</a>
         <a href="#projects" data-i18n="nav.projects">Projects</a>
         <a href="#experience" data-i18n="nav.experience">Experience</a>
         <a href="#contact" data-i18n="nav.contact">Contact Me</a>
-        <a href="#contact" class="btn primary small desktop-only" data-i18n="nav.cta">Let's Talk</a>
         <button class="lang-toggle mobile" type="button" aria-label="Switch language">中文</button>
       </nav>
       <button class="lang-toggle desktop" type="button" aria-label="Switch language">中文</button>
@@ -174,8 +174,9 @@
         </div>
         <div class="hero-visual">
           <div class="profile-mask">
-            <img src="assets/images/profile.jpg" alt="Chandan Sheikder" class="hero-profile-img" width="320"
-              height="320">
+            <img src="assets/images/profile.webp"
+              alt="Chandan Sheikder - Bio-Robotics Researcher specializing in autonomous navigation and swarm robotics"
+              class="hero-profile-img" width="320" height="320">
           </div>
           <div class="visual-decorator-1"></div>
           <div class="visual-decorator-2"></div>
@@ -191,7 +192,7 @@
       <div class="gallery-grid">
         <div class="gallery-lede">
           <p data-i18n="gallery.lede">Snapshots from my published and in-progress papers. The carousel advances
-            automatically every 30 seconds with a smooth crossfade and ambient glow.</p>
+            automatically every 15 seconds with a smooth crossfade and ambient glow.</p>
           <div class="lede-actions">
             <a class="btn ghost" href="https://github.com/Chandan118/Chandan_Sheikder" target="_blank"
               rel="noopener noreferrer" data-i18n="gallery.github">View on GitHub</a>
@@ -200,7 +201,7 @@
 
           </div>
           <div class="progress-legend">
-            <span class="dot live"></span> <span data-i18n="gallery.legend">Live slide · rotates every 30s</span>
+            <span class="dot live"></span> <span data-i18n="gallery.legend">Live slide · rotates every 15s</span>
           </div>
         </div>
         <div class="gallery-display">
@@ -330,12 +331,12 @@
       </div>
       <ul class="news-list">
         <li>
-          <span class="date">Jan 2025</span>
+          <span class="date">Jan 2026</span>
           <p data-i18n="news.item1">Leading a robot navigation and positioning system project at BIT, focusing on
             dynamic obstacles, unstructured terrain, and adaptive sensing.</p>
         </li>
         <li>
-          <span class="date">Mar 2025</span>
+          <span class="date">Dec 2024</span>
           <p data-i18n="news.item2">Architecting a smart wheelchair walker with a cloud platform for real-time
             monitoring and remote assistance.</p>
         </li>
@@ -741,6 +742,8 @@
         <div class="cta-main-btns">
           <a class="btn primary" href="mailto:chandan@bit.edu.cn" data-i18n="contact.email">Email Me</a>
           <a class="btn ghost" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn primary" href="#contact" data-i18n="nav.cta"
+            style="background: rgba(255,255,255,0.2); border: 2px solid rgba(255,255,255,0.5);">Let's Talk</a>
         </div>
       </div>
 
@@ -799,7 +802,7 @@
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+
 </body>
 
 </html>

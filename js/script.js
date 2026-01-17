@@ -124,10 +124,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "nav.contact": "Contact",
       "gallery.eyebrow": "Research Collection",
       "gallery.title": "Paper Visuals & Highlights",
-      "gallery.lede": "Snapshots from my published and in-progress papers. The carousel advances automatically every 30 seconds with a smooth crossfade and ambient glow.",
+      "gallery.lede": "Snapshots from my published and in-progress papers. The carousel advances automatically every 15 seconds with a smooth crossfade and ambient glow.",
       "gallery.github": "View on GitHub",
       "gallery.scholar": "Google Scholar",
-      "gallery.legend": "Live slide · rotates every 30s",
+      "gallery.legend": "Live slide · rotates every 15s",
       "gallery.prev": "← Prev",
       "gallery.next": "Next →",
       "hero.role": "Graduate Research Assistant · Bio-Robotics",
@@ -166,10 +166,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "nav.contact": "联系",
       "gallery.eyebrow": "研究合集",
       "gallery.title": "论文可视化与亮点",
-      "gallery.lede": "已发表与在研论文的快照，轮播每 30 秒自动切换，平滑渐变并带有光晕效果。",
+      "gallery.lede": "已发表与在研论文的快照，轮播每 15 秒自动切换，平滑渐变并带有光晕效果。",
       "gallery.github": "查看 GitHub",
       "gallery.scholar": "谷歌学术",
-      "gallery.legend": "当前幻灯片 · 每 30 秒轮换",
+      "gallery.legend": "当前幻灯片 · 每 15 秒轮换",
       "gallery.prev": "← 上一页",
       "gallery.next": "下一页 →",
       "hero.role": "研究助理 · 仿生机器人",
@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (galleryImage && paperTitle && paperSummary && paperTags && paperLink && paperType && paperYear && paperProgress) {
     let current = 0;
-    const duration = 30000;
+    const duration = 15000; // Changed from 30000ms to 15000ms (15 seconds)
     let timerId;
     const gallerySection = document.getElementById("gallery");
     applyStaticCopy();
