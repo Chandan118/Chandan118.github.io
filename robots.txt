@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chandan118.github.io/Chandan_Sheikder/sitemap.xml
+Sitemap: https://chandan118.github.io/sitemap.xml
