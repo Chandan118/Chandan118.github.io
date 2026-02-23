@@ -1,0 +1,60 @@
+Template A (co-author or collaborator)
+Subject: Quick request to link my research profile
+
+Hi [Name],
+
+I updated my research profile and publications page. Would you mind adding a link to my website from [lab page / author page / project page]?
+
+Website: https://chandan118.github.io/Chandan_Sheikder/
+Name: Chandan Sheikder
+Area: bio-robotics, autonomous navigation, sensor fusion, neuromorphic robotics
+
+If it helps, I can provide a short bio or project summary. Thanks for considering it.
+
+Best,
+Chandan
+
+---
+
+Template B (department/lab admin)
+Subject: Request to add personal research website link
+
+Hello [Name],
+
+Could you add my personal research website to my profile on [department/lab page]?
+
+Name: Chandan Sheikder
+Website: https://chandan118.github.io/Chandan_Sheikder/
+Role: Graduate Research Assistant
+
+I can send a short bio or any other details you need.
+
+Thank you,
+Chandan
+
+---
+
+Template C (conference/workshop page)
+Subject: Speaker/author page link update
+
+Hi [Name],
+
+Could you add my personal research website to my speaker/author page?
+Website: https://chandan118.github.io/Chandan_Sheikder/
+
+Thanks for your help,
+Chandan
+
+---
+
+Template D (co-author personal site)
+Subject: Add my research website to your co-author list?
+
+Hi [Name],
+
+If you maintain a co-author list on your website, would you mind adding my site?
+
+Chandan Sheikder - https://chandan118.github.io/Chandan_Sheikder/
+
+Thanks a lot,
+Chandan

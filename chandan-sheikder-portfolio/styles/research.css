@@ -1,0 +1,77 @@
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+
+.research-card {
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.research-card:hover,
+.research-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(97, 218, 251, 0.45);
+}
+
+.research-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.research-card p {
+  color: var(--text-muted);
+  margin-bottom: 0.9rem;
+}
+
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+}
+
+.method-card {
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: rgba(97, 218, 251, 0.05);
+}
+
+.method-card h3 {
+  margin-top: 0;
+}
+
+.research-split {
+  gap: 2rem;
+}
+
+.collaboration-list {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.collaboration-card {
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+.collaboration-card h3 {
+  margin-top: 0;
+  color: var(--text);
+}
+
+@media (max-width: 640px) {
+  .research-card,
+  .method-card,
+  .collaboration-card {
+    padding: 1.75rem;
+  }
+}
