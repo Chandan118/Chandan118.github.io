@@ -54,6 +54,7 @@
     integrity="sha512-XxZZR8HVYoSgGJE0E7E5Wdl66iRS0LlwM651c01qmPvvrLpzjAU6YewsGQKzB8o+d5QwDFi1Cdm42HcpsTOdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/premium-dark.css">
   <link rel="icon" type="image/svg+xml" href="logo/favicon.svg">
   <script type="application/ld+json">
     {
@@ -101,6 +102,7 @@
 </head>
 
 <body>
+  <div class="scroll-progress" id="scroll-progress"></div>
   <header class="top-nav">
     <div class="nav-inner">
       <div class="brand-wrapper">
@@ -133,6 +135,7 @@
 
   <main class="page">
     <section class="hero-section" id="hero">
+      <canvas id="particles-canvas"></canvas>
       <div class="hero-container">
         <div class="hero-content">
           <div class="hero-badge" data-i18n="hero.role">
