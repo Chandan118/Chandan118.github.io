@@ -105,11 +105,11 @@ document.addEventListener("DOMContentLoaded", () => {
       summaryZh: "使用软计算实现系缆机器人在动态环境中的自适应混合导航。",
       tags: ["Soft computing", "Navigation", "Tethered robots"],
       tagsZh: ["软计算", "导航", "系缆机器人"],
-      type: "Conference",
-      year: "2023",
+      type: "Journal",
+      year: "2025",
       image: "assets/images/Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots.png",
       alt: "Adaptive hybrid navigation for tethered robots",
-      link: "mailto:chandan@bit.edu.cn",
+      link: "https://onlinelibrary.wiley.com/doi/10.1002/rob.70222",
     },
   ];
 
