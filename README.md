@@ -58,17 +58,6 @@
 | AI | sensor fusion, learning for navigation |
 | Hardware | embedded systems, prototyping |
 
-## GitHub at a Glance
-<table>
-  <tr>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=Chandan118&show_icons=true&hide_title=true&include_all_commits=true&count_private=true" alt="GitHub stats" />
-    </td>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Chandan118&layout=compact" alt="Top languages" />
-    </td>
-  </tr>
-</table>
 
 ## Contribution Animation
 <picture>
