@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200">
+  <rect width="1000" height="200" fill="#555555"/>
+  
+  <!-- Building Icon -->
+  <g transform="translate(50, 20)" fill="#ffffff">
+    <!-- Base and steps -->
+    <rect x="0" y="100" width="160" height="10" />
+    <rect x="10" y="90" width="140" height="10" />
+    <!-- Pillars -->
+    <rect x="25" y="40" width="15" height="50" />
+    <rect x="55" y="40" width="15" height="50" />
+    <rect x="85" y="40" width="15" height="50" />
+    <rect x="115" y="40" width="15" height="50" />
+    <!-- Top beam -->
+    <rect x="10" y="30" width="140" height="10" />
+    <!-- Roof -->
+    <polygon points="80,0 10,30 150,30" />
+  </g>
+  
+  <!-- Under Building Text -->
+  <text x="130" y="155" font-family="'Times New Roman', Times, serif" font-size="16" fill="#ffffff" text-anchor="middle">EUROPEAN</text>
+  <text x="130" y="175" font-family="'Times New Roman', Times, serif" font-size="16" fill="#ffffff" text-anchor="middle">OPEN SCIENCE</text>
+  
+  <!-- EJECE Text -->
+  <text x="230" y="70" font-family="'Times New Roman', Times, serif" font-size="45" fill="#ffffff">EJECE</text>
+  <text x="230" y="125" font-family="'Times New Roman', Times, serif" font-size="34" font-style="italic" fill="#ffffff">European Journal of Electrical Engineering &amp; Computer Science</text>
+</svg>
