@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chandan Sheikder | Bio-Robotics Researcher</title>
+    <link>https://chandan118.github.io/</link>
+    <description>Portfolio and publications of Chandan Sheikder, Researcher at BIT.</description>
+    <atom:link href="https://chandan118.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+
+    <item>
+      <title>Bio-inspired navigation systems for robots</title>
+      <link>https://doi.org/10.1038/s44222-025-00367-6</link>
+      <description>Recent publication in Nature Reviews Bioengineering.</description>
+      <guid>https://doi.org/10.1038/s44222-025-00367-6</guid>
+    </item>
+
+    <item>
+      <title>Bio-inspired co-design: Integrating robotic maintenance considerations into turbine architecture</title>
+      <link>https://www.sciencedirect.com/science/article/pii/S1364032126004715</link>
+      <description>Recent publication in Science Direct.</description>
+      <guid>https://www.sciencedirect.com/science/article/pii/S1364032126004715</guid>
+    </item>
+
+    <item>
+      <title>Autonomous Artificial Intelligence for Extreme Radiation Space Missions</title>
+      <link>https://arc.aiaa.org/doi/10.2514/1.I011710</link>
+      <description>Recent publication in AIAA.</description>
+      <guid>https://arc.aiaa.org/doi/10.2514/1.I011710</guid>
+    </item>
+
+    <item>
+      <title>Neuromorphic navigation for autonomous robots</title>
+      <link>https://doi.org/10.1016/j.device.2025.100998</link>
+      <description>Recent publication.</description>
+      <guid>https://doi.org/10.1016/j.device.2025.100998</guid>
+    </item>
+  </channel>
+</rss>
