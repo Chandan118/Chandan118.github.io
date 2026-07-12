@@ -58,3 +58,20 @@ Chandan Sheikder - https://chandan118.github.io/Chandan_Sheikder/
 
 Thanks a lot,
 Chandan
+
+---
+
+Template E (Guest Post / Consulting Outreach)
+Subject: Guest contribution on sensor fusion & neuromorphic robotics
+
+Hi [Name/Editor],
+
+I've been following [Blog/Website Name] and love your content on autonomous systems.
+
+I'm a robotics consultant and sensor fusion engineer specializing in GPS-denied navigation. I recently published some research on bio-inspired navigation systems and I'd love to write a guest piece for your audience about implementing neuromorphic computing in modern robotics.
+
+Would you be open to a guest post? You can see my background and portfolio here:
+https://chandan118.github.io/Chandan_Sheikder/
+
+Thanks,
+Chandan

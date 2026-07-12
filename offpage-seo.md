@@ -15,11 +15,18 @@ Primary keywords:
 - swarm robotics
 - SLAM
 - ROS
+- robotics consultant freelance
+- sensor fusion engineer for hire
+- GPS-denied navigation consultant
+- neuromorphic computing consultant
 
 ## Profile Copy (Paste-Ready)
 
-Tagline:
+Tagline (Academic):
 Chandan Sheikder - bio-robotics researcher focused on autonomous navigation, sensor fusion, and neuromorphic methods.
+
+Tagline (Freelance/Consulting):
+Chandan Sheikder - Robotics consultant and sensor fusion engineer specializing in GPS-denied navigation and neuromorphic computing.
 
 Short bio (60-80 words):
 Chandan Sheikder is a Graduate Research Assistant in Mechanical Engineering at the Beijing Institute of Technology. His research covers bio-robotics, autonomous navigation, and sensor fusion with neuromorphic approaches for robust robotics in GPS-denied environments. He works on swarm robotics, SLAM, and ROS-based simulation. Website: https://chandan118.github.io/Chandan_Sheikder/
@@ -35,7 +42,7 @@ Chandan Sheikder is a Graduate Research Assistant and MEng candidate at the Beij
 
 His work spans sensor fusion (IMU/LiDAR/Vision), SLAM and navigation stacks in ROS/Gazebo, and neuromorphic methods for robust autonomy in GPS-denied environments.
 
-Open to collaborations in bio-robotics, navigation, and autonomous systems. Website: https://chandan118.github.io/Chandan_Sheikder/
+Open to collaborations in bio-robotics, navigation, and autonomous systems. Also available as a robotics consultant freelance and sensor fusion engineer for hire. Website: https://chandan118.github.io/Chandan_Sheikder/
 
 Google Scholar research interests:
 bio-robotics, autonomous navigation, sensor fusion, neuromorphic robotics, swarm robotics, SLAM, ROS
@@ -111,6 +118,12 @@ I updated my research profile with recent projects and publications in bio-robot
 
 LinkedIn post 2:
 My work centers on bio-inspired navigation, neuromorphic approaches, and ROS-based autonomy. Profile and contact info here: https://chandan118.github.io/Chandan_Sheikder/
+
+LinkedIn post 3 (Consulting/Freelance focused):
+Are you building autonomous systems for complex, GPS-denied environments? I am currently available as a robotics consultant and sensor fusion engineer for hire. Let's collaborate on robust navigation and neuromorphic computing solutions. Portfolio: https://chandan118.github.io/Chandan_Sheikder/
+
+X post 4 (Freelance focused):
+Available for new projects! 🚀 I'm a #RoboticsConsultant specializing in sensor fusion, SLAM, and GPS-denied navigation. If you need a sensor fusion engineer for hire or advice on neuromorphic computing, check out my portfolio: https://chandan118.github.io/Chandan_Sheikder/
 
 ## Off-Page Checklist
 
