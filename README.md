@@ -31,6 +31,7 @@
 ```
 
 ## Publications
+- 2025: Bio-inspired Co-design: Integrating Robotic Maintenance Considerations into Turbine Architecture. DOI: https://www.sciencedirect.com/science/article/pii/S1364032126004715
 - 2025: Bio-inspired navigation systems for robots. DOI: https://doi.org/10.1038/s44222-025-00367-6
 - 2025: Marine-Inspired Multimodal Sensor Fusion and Neuromorphic Processing for Autonomous Navigation. DOI: https://doi.org/10.3390/s25216627
 - 2025: Neuromorphic Navigation for Autonomous Robots. Device (Cell Press).
