@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Study: Sensor Fusion for GPS-Denied Navigation</title>
+  <meta name="description" content="A detailed look into how sensor fusion pipelines (IMU, LiDAR, and Vision) enable robust autonomous navigation in GPS-denied environments.">
+  <meta name="keywords" content="sensor fusion engineer for hire, GPS-denied navigation consultant, SLAM, robotics case study, autonomous navigation">
+  <meta name="author" content="Chandan Sheikder">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="css/styles.css" as="style">
+  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/premium-dark.css">
+  <link rel="icon" type="image/svg+xml" href="logo/favicon.svg">
+</head>
+
+<body>
+  <header class="top-nav">
+    <div class="nav-inner">
+      <div class="brand-wrapper">
+        <a href="index.html" class="brand-link">
+          <div class="brand-info">
+            <span class="brand-name">Chandan Sheikder</span>
+            <span class="brand-role">Case Studies</span>
+          </div>
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="consulting.html">Consulting</a>
+        <a href="#" class="active">Case Studies</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" style="padding-top: 100px;">
+    <article class="card" style="max-width: 800px; margin: 0 auto;">
+      <div class="section-header">
+        <p class="eyebrow">Technical Case Study</p>
+        <h1 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Solving GPS-Denied Navigation with Advanced Sensor Fusion</h1>
+        <p style="color: var(--text-color); font-size: 1.1rem; line-height: 1.6;">
+          When an autonomous drone or terrestrial robot loses GPS signal, the entire system can fail if the fallback navigation stack isn't robust. As a <strong>sensor fusion engineer for hire</strong>, I frequently tackle the challenge of building bulletproof state estimation systems.
+        </p>
+      </div>
+
+      <div style="margin-top: 3rem;">
+        <h2 style="margin-bottom: 1rem;">The Challenge: The GPS-Denied Environment</h2>
+        <p style="line-height: 1.7; margin-bottom: 1.5rem; color: var(--text-color);">
+          Whether operating in a subterranean mine, an urban canyon, or inside an industrial warehouse, autonomous robots must rely on onboard sensors when satellite signals vanish. Standard odometry quickly drifts, leading to catastrophic collisions or lost assets. 
+        </p>
+
+        <h2 style="margin-bottom: 1rem;">The Solution: Multi-Modal Sensor Fusion</h2>
+        <p style="line-height: 1.7; margin-bottom: 1.5rem; color: var(--text-color);">
+          The most reliable method for overcoming this challenge is integrating multiple complementary sensors using advanced filtering (such as Extended Kalman Filters or factor-graph optimization). 
+        </p>
+        <ul style="line-height: 1.7; margin-bottom: 2rem; color: var(--text-color); padding-left: 1.5rem;">
+          <li><strong>LiDAR Odometry (LOAM):</strong> Provides high-accuracy structural mapping, but can fail in long featureless corridors.</li>
+          <li><strong>Visual-Inertial Odometry (VIO):</strong> Excels in feature-rich environments and handles aggressive motions well when tightly coupled with a high-frequency IMU.</li>
+          <li><strong>Sensor Fusion:</strong> By combining LiDAR and VIO into a unified state estimator, the system gracefully handles the failure modes of individual sensors.</li>
+        </ul>
+
+        <div style="background: rgba(15, 124, 141, 0.1); padding: 2rem; border-left: 4px solid var(--primary); margin-bottom: 2rem;">
+            <h3 style="margin-bottom: 0.5rem;">Need help with your navigation stack?</h3>
+            <p style="margin-bottom: 1rem;">I offer specialized consulting to audit, debug, and build custom SLAM and sensor fusion pipelines for your autonomous systems.</p>
+            <a href="consulting.html" class="btn primary">View Consulting Services</a>
+        </div>
+
+        <h2 style="margin-bottom: 1rem;">Implementation Results</h2>
+        <p style="line-height: 1.7; margin-bottom: 1.5rem; color: var(--text-color);">
+          In a recent implementation, transitioning a client's legacy GPS-dependent system to a tightly coupled LiDAR-Inertial-Visual framework reduced localization drift by over 85% in completely dark, GPS-denied tunnels. This allowed the client to deploy their inspection robots in environments previously considered impossible.
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="page-footer">
+    <div class="footer-inner">
+      <div class="footer-branding-block">
+        <div class="footer-copyright">&copy; 2026 Chandan Sheikder | All Rights Reserved</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
