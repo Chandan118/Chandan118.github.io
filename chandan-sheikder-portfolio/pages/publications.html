@@ -3,168 +3,541 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Publications &amp; Intellectual Property | Chandan Sheikder</title>
+    <title>Publications &amp; Intellectual Property | Chandan Sheikder | Nature Portfolio Style Archive</title>
     <meta
       name="description"
-      content="Curated list of high-impact publications, patents, and open-source releases in robotics and autonomous systems."
+      content="Nature Portfolio style scholarly publication archive of Chandan Sheikder: peer-reviewed research in bio-inspired robotics, neuromorphic navigation, and sensor fusion."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles/animations.css" />
-    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../styles/nature-journal.css" />
   </head>
-  <body data-page="publications">
-    <header class="page-hero" id="top">
-      <div class="page-hero__overlay"></div>
+  <body class="nature-journal-body" data-page="publications">
+    <!-- Nature Top Masthead Ribbon -->
+    <div class="nature-masthead-ribbon">
       <div class="container">
-        <nav class="nav" data-nav>
-          <a class="nav__brand" data-nav-brand href="../index.html#top">Chandan Sheikder</a>
-          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-            <span class="nav__toggle-bar"></span>
-            <span class="nav__toggle-bar"></span>
-            <span class="nav__toggle-bar"></span>
-          </button>
-          <div class="nav__menu" id="nav-menu" data-nav-menu>
-            <a href="../index.html#top">Home</a>
-            <a href="../index.html#vision">Vision</a>
-            <a href="../index.html#domains">Domains</a>
-            <a href="projects.html">Projects</a>
-            <a href="research.html">Research</a>
-            <a href="publications.html">Publications</a>
-            <a href="../index.html#contact">Contact</a>
-          </div>
-        </nav>
-        <div class="page-hero__headline fade-in-up">
-          <span class="page-hero__eyebrow">Scholarly Impact</span>
-          <h1 class="page-hero__title">Peer-reviewed publications, patents, and open-source contributions.</h1>
-          <p class="page-hero__lead">
-            Advancing bio-robotics, autonomous navigation, and reliability engineering through collaborative research and translational outputs.
-          </p>
+        <div class="nature-ribbon-tag">
+          <span class="nature-ribbon-dot"></span>
+          <span>NATURE PORTFOLIO ARCHIVE &middot; PEER-REVIEWED SCIENTIFIC PAPERS</span>
         </div>
+        <div class="nature-ribbon-meta">
+          <span>ISSN 2058-5276 &middot; Vol. 2022&ndash;2026 Archive</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nature Sticky Header -->
+    <header class="nature-header">
+      <div class="container nature-nav-inner">
+        <a href="../../index.html" class="nature-brand">
+          <div class="nature-brand-title">CHANDAN <span>SHEIKDER</span></div>
+          <div class="nature-brand-sub">Bio-Robotics &amp; Autonomous Intelligence Lab</div>
+        </a>
+
+        <button class="nature-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
+
+        <nav class="nature-nav-links">
+          <a href="../../index.html" class="nature-nav-link">Home</a>
+          <a href="research.html" class="nature-nav-link">Research</a>
+          <a href="projects.html" class="nature-nav-link">Projects</a>
+          <a href="publications.html" class="nature-nav-link active">Publications</a>
+          <a href="../../assets/CV_Chandan.pdf" target="_blank" class="nature-nav-btn">
+            <i class="fa-regular fa-file-pdf"></i> Curriculum Vitae
+          </a>
+        </nav>
       </div>
     </header>
 
-    <main>
-      <section class="page-section">
-        <div class="container">
-          <div class="page-section__header">
-            <h2>Highlighted Publications</h2>
-            <p class="section__description">
-              Select publications spanning bio-inspired navigation, sensor fusion, and aerospace reliability assessments.
+    <!-- Nature Editorial Hero Banner -->
+    <section class="nature-editorial-hero">
+      <div class="container">
+        <div class="nature-breadcrumb">
+          <a href="../../index.html">Home</a> &rsaquo; <span>Publications</span> &rsaquo; <span>Scholarly Work</span>
+        </div>
+        <span class="nature-journal-tag">PEER-REVIEWED RESEARCH ARCHIVE</span>
+        <h1 class="nature-editorial-title">
+          Scientific Publications, In-Review Manuscripts &amp; Patents
+        </h1>
+        <p class="nature-editorial-lede">
+          Curated portfolio of peer-reviewed articles, review perspectives, and engineering disclosures spanning bio-inspired navigation stacks, neuromorphic sensory computing, extreme-environment autonomy, and swarm robotics.
+        </p>
+
+        <div class="nature-author-strip">
+          <div>Author: <strong>Chandan Sheikder<sup>1,*</sup></strong></div>
+          <div><sup>1</sup>School of Mechatronical Engineering, Beijing Institute of Technology</div>
+          <a href="https://scholar.google.com/citations?user=UWNJ6TwAAAAJ&hl=en" target="_blank" class="nature-pill-metric" style="text-decoration:none; color:inherit;">
+            <i class="fa-brands fa-google-scholar" style="color:var(--nj-red);"></i> Google Scholar Profile &rsaquo;
+          </a>
+          <a href="https://orcid.org/0000-0003-1459-8747" target="_blank" class="nature-pill-metric" style="text-decoration:none; color:inherit;">
+            <i class="fa-brands fa-orcid" style="color:#a6ce39;"></i> ORCID: 0000-0003-1459-8747
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nature Filter Toolbar -->
+    <div class="nature-filter-bar">
+      <div class="container nature-filter-flex">
+        <div class="nature-filter-group">
+          <button class="nature-filter-chip active" data-filter="all">All Articles</button>
+          <button class="nature-filter-chip" data-filter="nature">Nature Portfolio</button>
+          <button class="nature-filter-chip" data-filter="cell">Cell Press</button>
+          <button class="nature-filter-chip" data-filter="sensors">Sensors (MDPI)</button>
+          <button class="nature-filter-chip" data-filter="robotics">Robotics &amp; Space</button>
+          <button class="nature-filter-chip" data-filter="review">Under Review / Revision</button>
+          <button class="nature-filter-chip" data-filter="ip">Patents &amp; IP</button>
+        </div>
+        <div class="nature-search-box">
+          <i class="fa-solid fa-magnifying-glass nature-search-icon"></i>
+          <input type="text" class="nature-search-input" placeholder="Search by keyword, venue, DOI..." />
+        </div>
+      </div>
+    </div>
+
+    <!-- Publications List Section -->
+    <main class="nature-content-section">
+      <div class="container">
+        <!-- Paper 1: Nature Reviews Bioengineering -->
+        <article class="nature-article-card" data-filter-item data-category="nature journal">
+          <div class="nature-card-primary">
+            <div class="nature-card-meta">
+              <span class="nature-journal-badge badge-nature">Nature Portfolio</span>
+              <span class="nature-pub-status status-published"><i class="fa-solid fa-circle-check"></i> Published</span>
+              <span class="nature-pub-year">&middot; 2025</span>
+            </div>
+            <h2 class="nature-article-title">
+              <a href="https://doi.org/10.1038/s44222-025-00367-6" target="_blank">
+                Bio-inspired navigation systems for robots
+              </a>
+            </h2>
+            <p class="nature-authors-cite">
+              <span class="author-highlight">C. Sheikder</span>, et al. &middot; <em>Nature Reviews Bioengineering</em> (2025). DOI: 10.1038/s44222-025-00367-6
+            </p>
+            <p class="nature-abstract-text">
+              Comprehensive review synthesizing biological navigation strategies observed in insects, terrestrial mammals, and marine organisms with computational robotic implementations. Evaluates multi-scale physiological models, neural path integration circuits, and event-based sensory fusion for GPS-denied autonomous operation.
+            </p>
+            <div class="nature-key-findings">
+              <strong>Key Editorial Insights</strong>
+              <ul>
+                <li>Formulates closed-loop cross-domain bio-inspired mapping between biological neural substrates and robotic SLAM stacks.</li>
+                <li>Identifies low-power neuromorphic architectures achieving up to 80% computational energy reduction during agile locomotion.</li>
+              </ul>
+            </div>
+            <div class="nature-article-actions">
+              <a href="https://doi.org/10.1038/s44222-025-00367-6" target="_blank" class="nature-btn-doi">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Read at Nature
+              </a>
+              <button class="nature-btn-cite" data-bibtex="@article{sheikder2025bioinspired, title={Bio-inspired navigation systems for robots}, author={Sheikder, Chandan and others}, journal={Nature Reviews Bioengineering}, year={2025}, doi={10.1038/s44222-025-00367-6}}">
+                <i class="fa-regular fa-copy"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <div class="nature-figure-aside">
+            <div class="nature-figure-box" data-figure-box data-figure-title="Bio-inspired navigation systems for robots" data-figure-caption="Fig. 1 | Multiscale biological navigation architectures and their translation into robust robotic SLAM algorithms in unstructured environments." data-doi="https://doi.org/10.1038/s44222-025-00367-6">
+              <img src="../../assets/images/Bio-inspired navigation systems for robots.png" alt="Figure: Bio-inspired navigation systems for robots" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Fig. 1
+              </div>
+            </div>
+            <p class="nature-figure-caption">
+              <strong>Fig. 1 | Graphical Abstract.</strong> Bio-robotic navigation schema across sensor modalities. Click to expand.
+            </p>
+            <div class="nature-journal-logo-box">
+              <img src="../../assets/logos/nature-reviews-bioengineering.png" alt="Nature Reviews Bioengineering logo" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 2: Device (Cell Press) -->
+        <article class="nature-article-card" data-filter-item data-category="cell journal">
+          <div class="nature-card-primary">
+            <div class="nature-card-meta">
+              <span class="nature-journal-badge badge-cell">Cell Press</span>
+              <span class="nature-pub-status status-published"><i class="fa-solid fa-circle-check"></i> Published</span>
+              <span class="nature-pub-year">&middot; 2025</span>
+            </div>
+            <h2 class="nature-article-title">
+              <a href="https://doi.org/10.1016/j.device.2025.100998" target="_blank">
+                Neuromorphic navigation for autonomous robots
+              </a>
+            </h2>
+            <p class="nature-authors-cite">
+              <span class="author-highlight">C. Sheikder</span>, et al. &middot; <em>Device</em> (Cell Press, 2025). DOI: 10.1016/j.device.2025.100998
+            </p>
+            <p class="nature-abstract-text">
+              Explores silicon retina event cameras and neuromorphic spiking neural networks (SNNs) for instantaneous landmark extraction and trajectory generation. Demonstrates substantial latency and power advantages over traditional frame-based vision SLAM on edge robotics compute.
+            </p>
+            <div class="nature-key-findings">
+              <strong>Device Level Innovations</strong>
+              <ul>
+                <li>Hardware-software co-design executing low-latency spike-driven obstacle avoidance under &le;1.5W budget.</li>
+                <li>Sub-millisecond latency tracking during dynamic visual degradation and rapid camera rotations.</li>
+              </ul>
+            </div>
+            <div class="nature-article-actions">
+              <a href="https://doi.org/10.1016/j.device.2025.100998" target="_blank" class="nature-btn-doi">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Read at Cell Device
+              </a>
+              <button class="nature-btn-cite" data-bibtex="@article{sheikder2025device, title={Neuromorphic navigation for autonomous robots}, author={Sheikder, Chandan and others}, journal={Device}, volume={3}, year={2025}, publisher={Cell Press}, doi={10.1016/j.device.2025.100998}}">
+                <i class="fa-regular fa-copy"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <div class="nature-figure-aside">
+            <div class="nature-figure-box" data-figure-box data-figure-title="Neuromorphic Navigation for Autonomous Robots" data-figure-caption="Fig. 2 | Neuromorphic spike-based compute pipeline and edge co-processor architecture for autonomous mobile robots." data-doi="https://doi.org/10.1016/j.device.2025.100998">
+              <img src="../../assets/images/Neuromorphic Navigation for Autonomous Robots.png" alt="Figure: Neuromorphic navigation for autonomous robots" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Fig. 2
+              </div>
+            </div>
+            <p class="nature-figure-caption">
+              <strong>Fig. 2 | Neuromorphic Architecture.</strong> SNN pipeline with event stream integration.
+            </p>
+            <div class="nature-journal-logo-box">
+              <img src="../../assets/logos/cell-logo.png" alt="Cell Press logo" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 3: Sensors (MDPI) Marine-Inspired -->
+        <article class="nature-article-card" data-filter-item data-category="sensors journal">
+          <div class="nature-card-primary">
+            <div class="nature-card-meta">
+              <span class="nature-journal-badge badge-sensors">MDPI Sensors</span>
+              <span class="nature-pub-status status-published"><i class="fa-solid fa-circle-check"></i> Published</span>
+              <span class="nature-pub-year">&middot; 2025</span>
+            </div>
+            <h2 class="nature-article-title">
+              <a href="https://doi.org/10.3390/s25216627" target="_blank">
+                Marine-Inspired Multimodal Sensor Fusion and Neuromorphic Processing for Autonomous Navigation
+              </a>
+            </h2>
+            <p class="nature-authors-cite">
+              <span class="author-highlight">C. Sheikder</span>, et al. &middot; <em>Sensors</em> 25(21), 6627 (2025). DOI: 10.3390/s25216627
+            </p>
+            <p class="nature-abstract-text">
+              Presents an amphibious and subaquatic perception stack integrating optical flow, inertial kinematics, and bio-inspired neuromorphic event streams. Validated against turbid aquatic environments where optical-only SLAM suffers severe degradation.
+            </p>
+            <div class="nature-article-actions">
+              <a href="https://doi.org/10.3390/s25216627" target="_blank" class="nature-btn-doi">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Read Article (Open Access)
+              </a>
+              <button class="nature-btn-cite" data-bibtex="@article{sheikder2025marine, title={Marine-Inspired Multimodal Sensor Fusion and Neuromorphic Processing for Autonomous Navigation}, author={Sheikder, Chandan and others}, journal={Sensors}, volume={25}, number={21}, pages={6627}, year={2025}, publisher={MDPI}, doi={10.3390/s25216627}}">
+                <i class="fa-regular fa-copy"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <div class="nature-figure-aside">
+            <div class="nature-figure-box" data-figure-box data-figure-title="Marine-Inspired Multimodal Sensor Fusion" data-figure-caption="Fig. 3 | Multimodal flow, inertial, and vision sensor fusion architecture for aquatic and GPS-denied environments." data-doi="https://doi.org/10.3390/s25216627">
+              <img src="../../assets/images/Marine-Inspired Multimodal Sensor Fusion and Neuromorphic Processing for Autonomous Navigation.png" alt="Figure: Marine-Inspired Sensor Fusion" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Fig. 3
+              </div>
+            </div>
+            <p class="nature-figure-caption">
+              <strong>Fig. 3 | Sensor Fusion Pipeline.</strong> Bio-mimetic sensory processing workflow.
+            </p>
+            <div class="nature-journal-logo-box">
+              <img src="../../assets/logos/sensors-logo.png" alt="Sensors MDPI logo" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 4: Journal of Field Robotics (Wiley) -->
+        <article class="nature-article-card" data-filter-item data-category="robotics journal">
+          <div class="nature-card-primary">
+            <div class="nature-card-meta">
+              <span class="nature-journal-badge badge-wiley">Wiley JFR</span>
+              <span class="nature-pub-status status-published"><i class="fa-solid fa-circle-check"></i> Published</span>
+              <span class="nature-pub-year">&middot; 2025</span>
+            </div>
+            <h2 class="nature-article-title">
+              <a href="https://onlinelibrary.wiley.com/doi/10.1002/rob.70222" target="_blank">
+                Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots in Dynamic Environments
+              </a>
+            </h2>
+            <p class="nature-authors-cite">
+              <span class="author-highlight">C. Sheikder</span>, et al. &middot; <em>Journal of Field Robotics</em> (2025). DOI: 10.1002/rob.70222
+            </p>
+            <p class="nature-abstract-text">
+              Develops an adaptive hybrid navigation framework specifically solving tether entanglements and trajectory deviations for tethered robotic inspection platforms in hazardous industrial and tunnel environments. Incorporates fuzzy-neural dynamic cable tension estimation and topological clearance planning.
+            </p>
+            <div class="nature-article-actions">
+              <a href="https://onlinelibrary.wiley.com/doi/10.1002/rob.70222" target="_blank" class="nature-btn-doi">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Read Paper (Wiley)
+              </a>
+              <a href="../../assets/images/Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots.pdf" target="_blank" class="nature-btn-pdf">
+                <i class="fa-regular fa-file-pdf"></i> Download PDF
+              </a>
+              <button class="nature-btn-cite" data-bibtex="@article{sheikder2025softcomputing, title={Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots in Dynamic Environments}, author={Sheikder, Chandan and others}, journal={Journal of Field Robotics}, year={2025}, publisher={Wiley}, doi={10.1002/rob.70222}}">
+                <i class="fa-regular fa-copy"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <div class="nature-figure-aside">
+            <div class="nature-figure-box" data-figure-box data-figure-title="Soft Computing Adaptive Hybrid Navigation for Tethered Robots" data-figure-caption="Fig. 4 | Hybrid navigation control scheme combining soft computing catenary models with obstacle avoidance." data-doi="https://onlinelibrary.wiley.com/doi/10.1002/rob.70222">
+              <img src="../../assets/images/Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots.png" alt="Figure: Soft Computing Tethered Navigation" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Fig. 4
+              </div>
+            </div>
+            <p class="nature-figure-caption">
+              <strong>Fig. 4 | Tether Kinematics &amp; Control.</strong> Catenary modeling and predictive clearance.
+            </p>
+            <div class="nature-journal-logo-box">
+              <img src="../../assets/logos/journal-of-field-robotics.jpg" alt="Journal of Field Robotics logo" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 5: AIAA Journal of Aerospace Information Systems -->
+        <article class="nature-article-card" data-filter-item data-category="robotics aerospace journal">
+          <div class="nature-card-primary">
+            <div class="nature-card-meta">
+              <span class="nature-journal-badge badge-aiaa">AIAA JAIS</span>
+              <span class="nature-pub-status status-published"><i class="fa-solid fa-circle-check"></i> Published</span>
+              <span class="nature-pub-year">&middot; 2026</span>
+            </div>
+            <h2 class="nature-article-title">
+              <a href="https://arc.aiaa.org/doi/10.2514/1.I011710" target="_blank">
+                Autonomous Artificial Intelligence for Extreme Radiation Space Missions
+              </a>
+            </h2>
+            <p class="nature-authors-cite">
+              <span class="author-highlight">C. Sheikder</span>, et al. &middot; <em>AIAA Journal of Aerospace Information Systems</em> (2026). DOI: 10.2514/1.I011710
+            </p>
+            <p class="nature-abstract-text">
+              Addresses interplanetary communication latency and extreme radiation-induced single-event upsets (SEUs) with radiation-resilient distributed cognitive protocols for deep space exploration probes and planetary surface rovers.
+            </p>
+            <div class="nature-article-actions">
+              <a href="https://arc.aiaa.org/doi/10.2514/1.I011710" target="_blank" class="nature-btn-doi">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Read at AIAA
+              </a>
+              <a href="../../assets/images/Autonomous Space Exploration, Interplanetary Communication Latency.pdf" target="_blank" class="nature-btn-pdf">
+                <i class="fa-regular fa-file-pdf"></i> Download PDF
+              </a>
+              <button class="nature-btn-cite" data-bibtex="@article{sheikder2026space, title={Autonomous Artificial Intelligence for Extreme Radiation Space Missions}, author={Sheikder, Chandan and others}, journal={AIAA Journal of Aerospace Information Systems}, year={2026}, doi={10.2514/1.I011710}}">
+                <i class="fa-regular fa-copy"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <div class="nature-figure-aside">
+            <div class="nature-figure-box" data-figure-box data-figure-title="Autonomous Space Exploration & Interplanetary Latency" data-figure-caption="Fig. 5 | Interplanetary latency timeline and self-healing autonomous protocols under radiation stress." data-doi="https://arc.aiaa.org/doi/10.2514/1.I011710">
+              <img src="../../assets/images/Autonomous Space Exploration, Interplanetary Communication Latency.png" alt="Figure: Autonomous Space Exploration" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Fig. 5
+              </div>
+            </div>
+            <p class="nature-figure-caption">
+              <strong>Fig. 5 | Deep-Space Protocol.</strong> Communication delays and autonomous fail-safes.
+            </p>
+            <div class="nature-journal-logo-box">
+              <img src="../../assets/logos/aiaa-logo.png" alt="AIAA logo" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 6: Cell Reports Physical Science (Accepted / In Revision) -->
+        <article class="nature-article-card" data-filter-item data-category="cell review">
+          <div class="nature-card-primary">
+            <div class="nature-card-meta">
+              <span class="nature-journal-badge badge-cell">Cell Reports Physical Science</span>
+              <span class="nature-pub-status status-review"><i class="fa-solid fa-clock"></i> Accepted / In Revision</span>
+              <span class="nature-pub-year">&middot; 2026</span>
+            </div>
+            <h2 class="nature-article-title">
+              A Neuromorphic Framework for Bio-Inspired Navigation in Autonomous Robots
+            </h2>
+            <p class="nature-authors-cite">
+              <span class="author-highlight">C. Sheikder</span>, et al. &middot; <em>Cell Reports Physical Science</em> (2026)
+            </p>
+            <p class="nature-abstract-text">
+              Establishes a unified biological-to-silicon navigation paradigm incorporating insect optic flow integration, landmark learning, and heading cell representation in spiking neural hardware for low-power micro-robot platforms.
+            </p>
+            <div class="nature-article-actions">
+              <a href="../../assets/images/A Neuromorphic Framework for Bio-Inspired Navigation in Autonomous Robots.pdf" target="_blank" class="nature-btn-pdf">
+                <i class="fa-regular fa-file-pdf"></i> Read Author Manuscript (PDF)
+              </a>
+              <button class="nature-btn-cite" data-bibtex="@article{sheikder2026neuromorphicframework, title={A Neuromorphic Framework for Bio-Inspired Navigation in Autonomous Robots}, author={Sheikder, Chandan and others}, journal={Cell Reports Physical Science}, year={2026}}">
+                <i class="fa-regular fa-copy"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <div class="nature-figure-aside">
+            <div class="nature-figure-box" data-figure-box data-figure-title="A Neuromorphic Framework for Bio-Inspired Navigation" data-figure-caption="Fig. 6 | Optic-flow and ring-attractor heading integration circuits translated into spiking neural hardware." data-doi="#">
+              <img src="../../assets/images/A Neuromorphic Framework for Bio-Inspired Navigation in Autonomous Robots.png" alt="Figure: Neuromorphic Framework" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Fig. 6
+              </div>
+            </div>
+            <p class="nature-figure-caption">
+              <strong>Fig. 6 | Neuromorphic Core.</strong> Multi-strategy bio-navigation circuitry.
+            </p>
+            <div class="nature-journal-logo-box">
+              <img src="../../assets/logos/cell-press-logo.png" alt="Cell Press logo" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 7: Renewable and Sustainable Energy Reviews (Elsevier) -->
+        <article class="nature-article-card" data-filter-item data-category="review">
+          <div class="nature-card-primary">
+            <div class="nature-card-meta">
+              <span class="nature-journal-badge" style="background:#fef2f2; color:#b91c1c; border:1px solid #fecaca;">Elsevier</span>
+              <span class="nature-pub-status status-review"><i class="fa-solid fa-rotate"></i> Under Review (2nd Revision)</span>
+              <span class="nature-pub-year">&middot; 2026</span>
+            </div>
+            <h2 class="nature-article-title">
+              Bio-inspired and Soft Robotics for Autonomous Wind Energy Operations
+            </h2>
+            <p class="nature-authors-cite">
+              <span class="author-highlight">C. Sheikder</span>, et al. &middot; <em>Renewable and Sustainable Energy Reviews</em> (2026)
+            </p>
+            <p class="nature-abstract-text">
+              Comprehensive analysis of soft and bio-inspired robotic mechanisms for offshore and onshore wind turbine blade inspection, non-destructive evaluation (NDE), and aerodynamic maintenance without human rope access risks.
+            </p>
+            <div class="nature-article-actions">
+              <a href="../../assets/images/Bio-inspired and Soft Robotics for Autonomous Wind Energy Operations.pdf" target="_blank" class="nature-btn-pdf">
+                <i class="fa-regular fa-file-pdf"></i> Read Author Manuscript (PDF)
+              </a>
+              <button class="nature-btn-cite" data-bibtex="@article{sheikder2026wind, title={Bio-inspired and Soft Robotics for Autonomous Wind Energy Operations}, author={Sheikder, Chandan and others}, journal={Renewable and Sustainable Energy Reviews}, year={2026}}">
+                <i class="fa-regular fa-copy"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <div class="nature-figure-aside">
+            <div class="nature-figure-box" data-figure-box data-figure-title="Bio-inspired and Soft Robotics for Wind Energy" data-figure-caption="Fig. 7 | Soft robotic adhesion, crawling, and ultrasonic sensing architectures for offshore wind turbines." data-doi="#">
+              <img src="../../assets/images/Bio-inspired and Soft Robotics for Autonomous Wind Energy Operations.png" alt="Figure: Bio-inspired Wind Energy Operations" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Fig. 7
+              </div>
+            </div>
+            <p class="nature-figure-caption">
+              <strong>Fig. 7 | Soft Robotics Review.</strong> Offshore maintenance taxonomy.
+            </p>
+            <div class="nature-journal-logo-box">
+              <img src="../../assets/logos/renewable-sustainable-energy-reviews.jpg" alt="Renewable & Sustainable Energy Reviews" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Paper 8: IEEE IATMSI (Best Paper Award) -->
+        <article class="nature-article-card" data-filter-item data-category="award robotics">
+          <div class="nature-card-primary">
+            <div class="nature-card-meta">
+              <span class="nature-journal-badge" style="background:#eff6ff; color:#1e40af; border:1px solid #bfdbfe;">IEEE Conference</span>
+              <span class="nature-pub-status status-award"><i class="fa-solid fa-trophy"></i> Best Paper Award</span>
+              <span class="nature-pub-year">&middot; 2022</span>
+            </div>
+            <h2 class="nature-article-title">
+              Reliability evaluation framework for aerospace propulsion systems
+            </h2>
+            <p class="nature-authors-cite">
+              <span class="author-highlight">C. Sheikder</span>, et al. &middot; <em>IEEE International Conference on Advances in Technology, Management and Sciences</em> (2022)
+            </p>
+            <p class="nature-abstract-text">
+              Presents a machine-learning-assisted prognostic health monitoring (PHM) and failure probability degradation model for mission-critical aerospace turbomachinery. Evaluated against multi-stage operational sensor degradation benchmarks.
+            </p>
+            <div class="nature-article-actions">
+              <span class="nature-pill-metric" style="color:var(--nj-red);"><i class="fa-solid fa-award"></i> Conferred Best Paper Award</span>
+              <button class="nature-btn-cite" data-bibtex="@inproceedings{sheikder2022aerospace, title={Reliability evaluation framework for aerospace propulsion systems}, author={Sheikder, Chandan and others}, booktitle={IEEE IATMSI}, year={2022}}">
+                <i class="fa-regular fa-copy"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <div class="nature-figure-aside">
+            <div class="nature-figure-box" data-figure-box data-figure-title="Aerospace Reliability Evaluation Framework" data-figure-caption="Propulsion degradation predictive curves and Bayesian uncertainty envelopes." data-doi="#">
+              <img src="../../assets/images/project-embedded.png" alt="Figure: Aerospace Sensor Reliability" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Fig. 8
+              </div>
+            </div>
+            <p class="nature-figure-caption">
+              <strong>Fig. 8 | PHM Diagnostic Architecture.</strong> Prognostic health monitoring framework.
             </p>
           </div>
-          <div class="publication-list">
-            <article class="publication-card">
-              <div>
-                <h3>Bio-inspired navigation systems for robots</h3>
-                <p class="publication-card__meta">Nature Reviews Bioengineering · 2025</p>
-                <p class="publication-card__summary">
-                  Synthesizes biological navigation strategies with robotic implementations, featuring multi-scale models and real-world validation.
-                </p>
-              </div>
-              <div class="publication-card__actions">
-                <a href="#" aria-disabled="true" class="button button--ghost">Read Article</a>
-              </div>
-            </article>
+        </article>
 
-            <article class="publication-card">
-              <div>
-                <h3>Marine-inspired multimodal sensor fusion for autonomous navigation</h3>
-                <p class="publication-card__meta">Sensors · 2025</p>
-                <p class="publication-card__summary">
-                  Introduces a multimodal fusion pipeline combining flow sensing, vision, and inertial data for resilient marine robotic platforms.
+        <!-- Intellectual Property & Open Source Releases Section -->
+        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--nj-red);" data-filter-item data-category="ip">
+          <span class="nature-journal-tag">INTELLECTUAL PROPERTY &amp; OPEN CODE</span>
+          <h2 style="font-family: var(--nj-font-serif); font-size: 1.85rem; margin: 0.5rem 0 1.5rem; color: var(--nj-text-dark);">
+            Patents &amp; Open-Source Releases
+          </h2>
+          <div class="nature-pillars-grid">
+            <div class="nature-pillar-card">
+              <div class="nature-pillar-body">
+                <div class="nature-pillar-num">PATENT PENDING &middot; CN/PCT</div>
+                <h3 class="nature-pillar-title">Bio-Inspired Multimodal Navigation &amp; Virtual Pheromone Localization Stack</h3>
+                <p class="nature-pillar-text">
+                  Proprietary method and system for autonomous swarm robot navigation utilizing optical/thermal synthetic pheromone trails and edge-computed bio-inspired potential field algorithms for GPS-denied environments.
                 </p>
+                <div class="nature-article-actions" style="margin-top: auto;">
+                  <span class="nature-pill-metric"><i class="fa-solid fa-shield-halved"></i> Intellectual Property</span>
+                  <span class="nature-pill-metric"><i class="fa-solid fa-file-signature"></i> Beijing Institute of Technology</span>
+                </div>
               </div>
-              <div class="publication-card__actions">
-                <a href="#" aria-disabled="true" class="button button--ghost">Read Article</a>
-              </div>
-            </article>
-
-            <article class="publication-card">
-              <div>
-                <h3>Reliability evaluation framework for aerospace propulsion systems</h3>
-                <p class="publication-card__meta">IEEE IATMSI · Best Paper Award · 2022</p>
-                <p class="publication-card__summary">
-                  Presents a reliability engineering framework for propulsion monitoring with predictive degradation modeling and diagnostic validation.
+            </div>
+            <div class="nature-pillar-card">
+              <div class="nature-pillar-body">
+                <div class="nature-pillar-num">OPEN REPOSITORY &middot; ROS 2</div>
+                <h3 class="nature-pillar-title">FormicaBot Swarm Robotics &amp; Tethered Navigation Framework</h3>
+                <p class="nature-pillar-text">
+                  Complete open-source release including hexapedal robot CAD, ROS 2 packages, Gazebo/Webots physics simulation suites, and soft computing tether catenary estimation algorithms.
                 </p>
+                <div class="nature-article-actions" style="margin-top: auto;">
+                  <a href="https://github.com/Chandan118" target="_blank" class="nature-btn-doi">
+                    <i class="fa-brands fa-github"></i> GitHub Repositories
+                  </a>
+                </div>
               </div>
-              <div class="publication-card__actions">
-                <a href="#" aria-disabled="true" class="button button--ghost">Conference PDF</a>
-              </div>
-            </article>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section class="page-section page-section--alt">
-        <div class="container">
-          <div class="page-section__header">
-            <h2>Intellectual Property &amp; Open Source</h2>
-            <p class="section__description">
-              Protecting core innovations while sharing reproducible frameworks that accelerate the field.
-            </p>
-          </div>
-          <div class="split">
-            <article class="summary-card">
-              <h3 class="summary-card__title">Bio-inspired Fusion Navigation Framework</h3>
-              <p class="summary-card__body">
-                Patent-pending methodology integrating pheromone-inspired signaling, multi-modal fusion, and edge AI for resilient autonomy across unstructured domains.
-              </p>
-              <span class="badge">Patent Pending</span>
-            </article>
-            <article class="summary-card">
-              <h3 class="summary-card__title">FormicaBot Open Hardware &amp; Software Stack</h3>
-              <p class="summary-card__body">
-                Comprehensive release covering swarm robot CAD, firmware, ROS 2 packages, and evaluation benchmarks enabling reproducible swarming research.
-              </p>
-              <a href="https://github.com/Chandan118" target="_blank" rel="noreferrer" class="button button--ghost accent-glow">GitHub Repository</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="page-section">
-        <div class="container">
-          <div class="page-section__header">
-            <h2>Documents &amp; Resources</h2>
-            <p class="section__description">
-              Access the latest curriculum vitae, research statement, and supplementary materials for ongoing projects.
-            </p>
-          </div>
-          <div class="resource-list">
-            <article class="resource-card">
-              <div>
-                <h3>Curriculum Vitae</h3>
-                <p>Complete academic, research, and leadership timeline.</p>
-              </div>
-              <a href="../assets/documents/CV_Sheikder.pdf" class="button" target="_blank" rel="noreferrer">Download</a>
-            </article>
-            <article class="resource-card">
-              <div>
-                <h3>Research Statement</h3>
-                <p>Vision, methodology, and near-term roadmap for bio-robotics research.</p>
-              </div>
-              <a href="../assets/documents/Research_Statement.pdf" class="button" target="_blank" rel="noreferrer">Download</a>
-            </article>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
 
-    <footer class="footer">
-      <div class="container footer__content">
-        <p>&copy; <span id="year"></span> Chandan Sheikder. All rights reserved.</p>
-        <a href="#top">Back to top ↑</a>
+    <!-- Interactive Lightbox Modal -->
+    <div id="nature-modal" class="nature-modal" role="dialog" aria-modal="true">
+      <div class="nature-modal-content">
+        <button id="nature-modal-close" class="nature-modal-close" aria-label="Close image modal">&times;</button>
+        <img id="nature-modal-img" class="nature-modal-img" src="" alt="High resolution scientific diagram" />
+        <div class="nature-modal-info">
+          <h3 id="nature-modal-title" class="nature-modal-title">Scientific Figure</h3>
+          <p id="nature-modal-caption" class="nature-modal-caption"></p>
+          <a id="nature-modal-doi" href="#" target="_blank" class="nature-btn-doi" style="display:none;">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> View Source Publication
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="nature-toast" class="nature-toast" role="status" aria-live="polite">
+      <i class="fa-solid fa-circle-check" style="color:var(--nj-red);"></i>
+      <span id="nature-toast-msg">Copied to clipboard</span>
+    </div>
+
+    <!-- Nature Footer -->
+    <footer class="nature-footer">
+      <div class="container nature-footer-inner">
+        <div>
+          &copy; 2026 Chandan Sheikder. Bio-Robotics &amp; Autonomous Systems Laboratory.
+        </div>
+        <div class="nature-footer-links">
+          <a href="../../index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications</a>
+          <a href="https://scholar.google.com/citations?user=UWNJ6TwAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </div>
       </div>
     </footer>
 
-    <script src="../config/site-config.js" defer></script>
-    <script src="../config/seo-config.js" defer></script>
-    <script src="../scripts/main.js" defer></script>
-    <script src="../scripts/analytics.js" defer></script>
+    <script src="../scripts/nature-journal.js" defer></script>
   </body>
 </html>

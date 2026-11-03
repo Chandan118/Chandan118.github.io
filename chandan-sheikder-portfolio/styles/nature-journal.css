@@ -1,0 +1,1071 @@
+/* ==========================================================================
+   Nature Journal Style UI System
+   Bio-Robotics & Autonomous Systems - Chandan Sheikder
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --nj-red: #c70000;
+  --nj-red-dark: #9e0000;
+  --nj-red-subtle: #fef2f2;
+  --nj-red-border: #fecaca;
+  --nj-dark: #12151a;
+  --nj-dark-surface: #1a1e24;
+  --nj-text-dark: #22252a;
+  --nj-text-body: #374151;
+  --nj-text-muted: #6b7280;
+  --nj-border: #e5e7eb;
+  --nj-border-subtle: #f3f4f6;
+  --nj-bg: #ffffff;
+  --nj-bg-alt: #f9fafb;
+  --nj-bg-paper: #fcfcfc;
+  --nj-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --nj-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --nj-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --nj-font-serif: "Newsreader", "Charter", "Merriweather", "Georgia", Cambria, serif;
+  --nj-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --nj-font-mono: "JetBrains Mono", "Fira Code", monospace;
+  --nj-container: 1200px;
+}
+
+/* Dark mode preferences */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --nj-bg: #0b0f17;
+    --nj-bg-alt: #111722;
+    --nj-bg-paper: #141b27;
+    --nj-text-dark: #f8fafc;
+    --nj-text-body: #cbd5e1;
+    --nj-text-muted: #94a3b8;
+    --nj-border: #222f42;
+    --nj-border-subtle: #192333;
+    --nj-red-subtle: rgba(199, 0, 0, 0.15);
+    --nj-red-border: rgba(199, 0, 0, 0.35);
+  }
+}
+
+/* Base resets & typography */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body.nature-journal-body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--nj-font-sans);
+  background-color: var(--nj-bg);
+  color: var(--nj-text-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Nature Top Ribbon */
+.nature-masthead-ribbon {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 0;
+  border-bottom: 2px solid var(--nj-red);
+}
+
+.nature-masthead-ribbon .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nature-ribbon-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.nature-ribbon-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--nj-red);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.nature-ribbon-meta {
+  color: #9ca3af;
+  font-size: 0.72rem;
+}
+
+/* Primary Header */
+.nature-header {
+  background-color: var(--nj-bg);
+  border-bottom: 1px solid var(--nj-border);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: var(--nj-shadow-sm);
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  max-width: var(--nj-container);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.nature-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 0;
+  gap: 1.5rem;
+}
+
+.nature-brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.nature-brand-title {
+  font-family: var(--nj-font-serif);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--nj-text-dark);
+  line-height: 1.1;
+}
+
+.nature-brand-title span {
+  color: var(--nj-red);
+}
+
+.nature-brand-sub {
+  font-size: 0.75rem;
+  color: var(--nj-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.nature-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nature-nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--nj-text-body);
+  text-decoration: none;
+  padding: 6px 2px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nature-nav-link:hover {
+  color: var(--nj-red);
+}
+
+.nature-nav-link.active {
+  color: var(--nj-red);
+  font-weight: 600;
+}
+
+.nature-nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -0.85rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--nj-red);
+}
+
+.nature-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--nj-red);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.nature-nav-btn:hover {
+  background-color: var(--nj-red-dark);
+}
+
+/* Mobile Nav Toggle */
+.nature-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  color: var(--nj-text-dark);
+}
+
+@media (max-width: 860px) {
+  .nature-mobile-toggle {
+    display: block;
+  }
+  .nature-nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--nj-bg);
+    flex-direction: column;
+    padding: 1.5rem;
+    border-bottom: 2px solid var(--nj-red);
+    box-shadow: var(--nj-shadow-lg);
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .nature-nav-links.open {
+    display: flex;
+  }
+  .nature-nav-link.active::after {
+    display: none;
+  }
+}
+
+/* Editorial Hero Banner */
+.nature-editorial-hero {
+  background-color: var(--nj-bg-alt);
+  border-bottom: 1px solid var(--nj-border);
+  padding: 3.5rem 0 3rem;
+  position: relative;
+}
+
+.nature-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--nj-text-muted);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nature-breadcrumb a {
+  color: var(--nj-text-muted);
+  text-decoration: none;
+}
+
+.nature-breadcrumb a:hover {
+  color: var(--nj-red);
+}
+
+.nature-journal-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: var(--nj-red);
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 2px;
+  margin-bottom: 0.75rem;
+}
+
+.nature-editorial-title {
+  font-family: var(--nj-font-serif);
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  font-weight: 700;
+  line-height: 1.18;
+  color: var(--nj-text-dark);
+  margin: 0 0 1rem;
+  letter-spacing: -0.015em;
+}
+
+.nature-editorial-lede {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--nj-text-body);
+  max-width: 860px;
+  margin: 0 0 1.5rem;
+}
+
+.nature-author-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--nj-text-muted);
+  padding-top: 1rem;
+  border-top: 1px dashed var(--nj-border);
+}
+
+.nature-author-strip strong {
+  color: var(--nj-text-dark);
+}
+
+.nature-pill-metric {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--nj-bg-paper);
+  border: 1px solid var(--nj-border);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+/* Tab Filter Toolbar */
+.nature-filter-bar {
+  background-color: var(--nj-bg);
+  border-bottom: 1px solid var(--nj-border);
+  padding: 1rem 0;
+  position: sticky;
+  top: 61px;
+  z-index: 900;
+  backdrop-filter: blur(8px);
+}
+
+.nature-filter-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nature-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.nature-filter-chip {
+  background: none;
+  border: 1px solid var(--nj-border);
+  background-color: var(--nj-bg-paper);
+  color: var(--nj-text-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nature-filter-chip:hover {
+  border-color: var(--nj-red);
+  color: var(--nj-red);
+}
+
+.nature-filter-chip.active {
+  background-color: var(--nj-red);
+  border-color: var(--nj-red);
+  color: #ffffff;
+}
+
+.nature-search-box {
+  position: relative;
+  min-width: 240px;
+}
+
+.nature-search-input {
+  width: 100%;
+  font-size: 0.85rem;
+  padding: 7px 12px 7px 32px;
+  border: 1px solid var(--nj-border);
+  border-radius: 4px;
+  background-color: var(--nj-bg-paper);
+  color: var(--nj-text-dark);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.nature-search-input:focus {
+  border-color: var(--nj-red);
+}
+
+.nature-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--nj-text-muted);
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+/* Journal Article Cards Layout */
+.nature-content-section {
+  padding: 3rem 0 4rem;
+}
+
+.nature-article-card {
+  background-color: var(--nj-bg);
+  border: 1px solid var(--nj-border);
+  border-radius: 6px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--nj-shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 2.25rem;
+  align-items: start;
+}
+
+.nature-article-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: var(--nj-shadow-md);
+}
+
+@media (max-width: 960px) {
+  .nature-article-card {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+}
+
+/* Card Header & Journal Citation */
+.nature-card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.78rem;
+  margin-bottom: 0.85rem;
+}
+
+.nature-journal-badge {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-size: 0.72rem;
+}
+
+.badge-nature {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.badge-cell {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.badge-sensors {
+  background-color: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.badge-wiley {
+  background-color: #faf5ff;
+  color: #6b21a8;
+  border: 1px solid #e9d5ff;
+}
+
+.badge-aiaa {
+  background-color: #fff7ed;
+  color: #c2410c;
+  border: 1px solid #ffedd5;
+}
+
+.nature-pub-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.status-published {
+  background-color: #ecfdf5;
+  color: #065f46;
+}
+
+.status-review {
+  background-color: #fffbeb;
+  color: #b45309;
+}
+
+.status-award {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.nature-pub-year {
+  color: var(--nj-text-muted);
+  font-weight: 500;
+}
+
+.nature-article-title {
+  font-family: var(--nj-font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--nj-text-dark);
+  margin: 0 0 0.65rem;
+}
+
+.nature-article-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nature-article-title a:hover {
+  color: var(--nj-red);
+}
+
+.nature-authors-cite {
+  font-size: 0.88rem;
+  color: var(--nj-text-muted);
+  margin-bottom: 0.85rem;
+}
+
+.nature-authors-cite span.author-highlight {
+  color: var(--nj-text-dark);
+  font-weight: 600;
+}
+
+.nature-authors-cite em {
+  font-style: normal;
+  color: var(--nj-text-dark);
+}
+
+.nature-abstract-text {
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: var(--nj-text-body);
+  margin-bottom: 1.25rem;
+}
+
+.nature-key-findings {
+  background-color: var(--nj-bg-alt);
+  border-left: 3px solid var(--nj-red);
+  padding: 0.85rem 1.1rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.85rem;
+}
+
+.nature-key-findings strong {
+  display: block;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--nj-red);
+  margin-bottom: 4px;
+}
+
+.nature-key-findings ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.nature-key-findings li {
+  margin-bottom: 3px;
+}
+
+/* Card Action Links */
+.nature-article-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding-top: 1rem;
+  border-top: 1px solid var(--nj-border-subtle);
+}
+
+.nature-btn-doi {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--nj-red);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.nature-btn-doi:hover {
+  background-color: var(--nj-red-dark);
+}
+
+.nature-btn-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--nj-bg-paper);
+  border: 1px solid var(--nj-border);
+  color: var(--nj-text-dark);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.nature-btn-pdf:hover {
+  border-color: var(--nj-red);
+  color: var(--nj-red);
+}
+
+.nature-btn-cite {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: 1px dashed var(--nj-border);
+  color: var(--nj-text-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nature-btn-cite:hover {
+  border-color: var(--nj-text-dark);
+  color: var(--nj-text-dark);
+}
+
+/* Scientific Figure Container */
+.nature-figure-aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.nature-figure-box {
+  position: relative;
+  border: 1px solid var(--nj-border);
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #000000;
+  cursor: pointer;
+  group: hover;
+}
+
+.nature-figure-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nature-figure-box:hover img {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+
+.nature-figure-overlay {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  backdrop-filter: blur(4px);
+}
+
+.nature-figure-caption {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--nj-text-muted);
+}
+
+.nature-figure-caption strong {
+  color: var(--nj-text-dark);
+  font-weight: 600;
+}
+
+.nature-journal-logo-box {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nature-journal-logo-box img {
+  max-height: 24px;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(20%);
+}
+
+/* Research Pillars Grid */
+.nature-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.nature-pillar-card {
+  background-color: var(--nj-bg);
+  border: 1px solid var(--nj-border);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: var(--nj-shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.nature-pillar-img-box {
+  position: relative;
+  height: 220px;
+  background-color: #0a0e14;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.nature-pillar-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.nature-pillar-img-box:hover img {
+  transform: scale(1.04);
+}
+
+.nature-pillar-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.nature-pillar-num {
+  font-family: var(--nj-font-mono);
+  font-size: 0.75rem;
+  color: var(--nj-red);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.nature-pillar-title {
+  font-family: var(--nj-font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--nj-text-dark);
+  line-height: 1.25;
+  margin: 0 0 0.85rem;
+}
+
+.nature-pillar-text {
+  font-size: 0.9rem;
+  color: var(--nj-text-body);
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.nature-pillar-methods {
+  margin-top: auto;
+  border-top: 1px solid var(--nj-border-subtle);
+  padding-top: 1rem;
+}
+
+.nature-pillar-methods-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--nj-text-muted);
+  margin-bottom: 6px;
+}
+
+.nature-tags-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.nature-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: var(--nj-bg-alt);
+  color: var(--nj-text-body);
+  border: 1px solid var(--nj-border);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+/* Method Protocol Section */
+.nature-protocol-section {
+  background-color: var(--nj-bg-alt);
+  border: 1px solid var(--nj-border);
+  border-radius: 6px;
+  padding: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.nature-protocol-header {
+  border-bottom: 2px solid var(--nj-red);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nature-protocol-title {
+  font-family: var(--nj-font-serif);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--nj-text-dark);
+  margin: 0 0 6px;
+}
+
+.nature-protocol-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.nature-protocol-col h4 {
+  font-family: var(--nj-font-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--nj-text-dark);
+  margin: 0 0 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nature-protocol-col ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.nature-protocol-col li {
+  margin-bottom: 8px;
+}
+
+/* Project Dossier Cards */
+.nature-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.nature-project-card {
+  background-color: var(--nj-bg);
+  border: 1px solid var(--nj-border);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: var(--nj-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nature-project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--nj-shadow-md);
+}
+
+.nature-project-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  background-color: #0f172a;
+}
+
+.nature-project-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.nature-spec-table {
+  width: 100%;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+
+.nature-spec-table td {
+  padding: 5px 0;
+  border-bottom: 1px solid var(--nj-border-subtle);
+}
+
+.nature-spec-table td:first-child {
+  font-weight: 600;
+  color: var(--nj-text-dark);
+  width: 40%;
+}
+
+.nature-spec-table td:last-child {
+  color: var(--nj-text-muted);
+}
+
+/* Modal Lightbox */
+.nature-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.nature-modal.active {
+  display: flex;
+}
+
+.nature-modal-content {
+  background-color: var(--nj-bg);
+  border: 1px solid var(--nj-border);
+  border-radius: 8px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.nature-modal-img {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  background-color: #0a0a0a;
+}
+
+.nature-modal-info {
+  padding: 1.5rem;
+}
+
+.nature-modal-title {
+  font-family: var(--nj-font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--nj-text-dark);
+  margin: 0 0 0.5rem;
+}
+
+.nature-modal-caption {
+  font-size: 0.9rem;
+  color: var(--nj-text-body);
+  line-height: 1.55;
+  margin: 0 0 1rem;
+}
+
+.nature-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  z-index: 10;
+}
+
+.nature-modal-close:hover {
+  background: var(--nj-red);
+}
+
+/* Toast Notification */
+.nature-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--nj-shadow-lg);
+  border-left: 4px solid var(--nj-red);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 10001;
+}
+
+.nature-toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Footer */
+.nature-footer {
+  background-color: var(--nj-bg-alt);
+  border-top: 1px solid var(--nj-border);
+  padding: 3rem 0;
+  font-size: 0.85rem;
+  color: var(--nj-text-muted);
+}
+
+.nature-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.nature-footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nature-footer-links a {
+  color: var(--nj-text-body);
+  text-decoration: none;
+}
+
+.nature-footer-links a:hover {
+  color: var(--nj-red);
+}

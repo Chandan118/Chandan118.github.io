@@ -3,239 +3,359 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Flagship Projects | Chandan Sheikder</title>
+    <title>Flagship Projects &amp; Robotic Systems | Chandan Sheikder | Nature Portfolio Style</title>
     <meta
       name="description"
-      content="Featured robotics and AI projects including FormicaBot, GPS-denied navigation frameworks, assistive platforms, and aerospace sensor systems."
+      content="Nature Portfolio style technology dossier of Chandan Sheikder: flagship autonomous systems, FormicaBot swarm testbeds, GPS-denied navigation stacks, and assistive platforms."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles/animations.css" />
-    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../styles/nature-journal.css" />
   </head>
-  <body data-page="projects">
-    <header class="page-hero" id="top">
-      <div class="page-hero__overlay"></div>
+  <body class="nature-journal-body" data-page="projects">
+    <!-- Nature Top Masthead Ribbon -->
+    <div class="nature-masthead-ribbon">
       <div class="container">
-        <nav class="nav" data-nav>
-          <a class="nav__brand" data-nav-brand href="../index.html#top">Chandan Sheikder</a>
-          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-            <span class="nav__toggle-bar"></span>
-            <span class="nav__toggle-bar"></span>
-            <span class="nav__toggle-bar"></span>
-          </button>
-          <div class="nav__menu" id="nav-menu" data-nav-menu>
-            <a href="../index.html#top">Home</a>
-            <a href="../index.html#vision">Vision</a>
-            <a href="../index.html#domains">Domains</a>
-            <a href="projects.html">Projects</a>
-            <a href="research.html">Research</a>
-            <a href="publications.html">Publications</a>
-            <a href="../index.html#contact">Contact</a>
-          </div>
-        </nav>
-        <div class="page-hero__headline fade-in-up">
-          <span class="page-hero__eyebrow">Robotic Systems Portfolio</span>
-          <h1 class="page-hero__title">Flagship projects translating research into deployable autonomy.</h1>
-          <p class="page-hero__lead">
-            From swarm robotics testbeds to mission-ready navigation frameworks and assistive platforms, each project
-            couples rigorous experimentation with real-world validation.
-          </p>
+        <div class="nature-ribbon-tag">
+          <span class="nature-ribbon-dot"></span>
+          <span>NATURE PORTFOLIO ARCHIVE &middot; SYSTEMS &amp; TECHNOLOGY DOSSIER</span>
         </div>
+        <div class="nature-ribbon-meta">
+          <span>Engineering Hardware &middot; Software Stacks &middot; Open Source</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nature Sticky Header -->
+    <header class="nature-header">
+      <div class="container nature-nav-inner">
+        <a href="../../index.html" class="nature-brand">
+          <div class="nature-brand-title">CHANDAN <span>SHEIKDER</span></div>
+          <div class="nature-brand-sub">Bio-Robotics &amp; Autonomous Intelligence Lab</div>
+        </a>
+
+        <button class="nature-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
+
+        <nav class="nature-nav-links">
+          <a href="../../index.html" class="nature-nav-link">Home</a>
+          <a href="research.html" class="nature-nav-link">Research</a>
+          <a href="projects.html" class="nature-nav-link active">Projects</a>
+          <a href="publications.html" class="nature-nav-link">Publications</a>
+          <a href="../../assets/CV_Chandan.pdf" target="_blank" class="nature-nav-btn">
+            <i class="fa-regular fa-file-pdf"></i> Curriculum Vitae
+          </a>
+        </nav>
       </div>
     </header>
 
-    <main>
-      <section class="page-section">
-        <div class="container">
-          <div class="page-section__header">
-            <h2>Explore by Focus</h2>
-            <p class="section__description">
-              Filter by research focus to surface relevant results. Each card links to source code,
-              publications, and demonstrations where available.
-            </p>
+    <!-- Nature Editorial Hero Banner -->
+    <section class="nature-editorial-hero">
+      <div class="container">
+        <div class="nature-breadcrumb">
+          <a href="../../index.html">Home</a> &rsaquo; <span>Projects</span> &rsaquo; <span>Robotic Systems Portfolio</span>
+        </div>
+        <span class="nature-journal-tag">TECHNOLOGY &amp; SYSTEMS DOSSIER</span>
+        <h1 class="nature-editorial-title">
+          Flagship Robotic Platforms, Navigation Stacks &amp; Embedded Systems
+        </h1>
+        <p class="nature-editorial-lede">
+          Translating fundamental biological principles and sensorimotor models into deployable robotic hardware, open-source ROS 2 navigation packages, and fault-tolerant cyber-physical systems.
+        </p>
+
+        <div class="nature-author-strip">
+          <div>Systems Architect: <strong>Chandan Sheikder</strong></div>
+          <div class="nature-pill-metric">
+            <i class="fa-brands fa-github" style="color:var(--nj-red);"></i> Open Source on GitHub
           </div>
-          <div class="projects-filter">
-            <button class="filter-chip" data-filter data-filter-value="all" data-active="true">All</button>
-            <button class="filter-chip" data-filter data-filter-value="swarm">Swarm Robotics</button>
-            <button class="filter-chip" data-filter data-filter-value="navigation">Navigation</button>
-            <button class="filter-chip" data-filter data-filter-value="assistive">Assistive Systems</button>
-            <button class="filter-chip" data-filter data-filter-value="aerospace">Aerospace</button>
-            <button class="filter-chip" data-filter data-filter-value="edge-ai">Edge AI</button>
-          </div>
-
-          <div class="project-catalog">
-            <article class="project-card" data-project-card data-project-topics="swarm, edge-ai, energy">
-              <div class="project-card__header">
-                <span class="project-card__icon" aria-hidden="true">🔬</span>
-                <div>
-                  <h3>FormicaBot: Bio-inspired Swarm Robotics Platform</h3>
-                  <p class="project-card__meta">
-                    Principal Researcher &nbsp;|&nbsp; BIT Robotics Lab &nbsp;|&nbsp; 2024–Present
-                  </p>
-                </div>
-              </div>
-              <p class="project-card__summary">
-                Holistic framework closing the simulation-to-reality gap in swarm robotics through biological validation and hardware-software co-design.
-              </p>
-              <ul class="project-card__list">
-                <li>Dual-modality virtual pheromone system (optical/thermal) for resilient communication</li>
-                <li>Stochastic PDE modeling of ant foraging under environmental stressors</li>
-                <li>Edge-AI pipeline with quantized MobileNetV3 for decentralized target recognition</li>
-                <li>Bio-inspired hexapedal locomotion achieving ≤1.2W power consumption</li>
-              </ul>
-              <p class="project-card__outcomes">
-                <strong>Outcomes:</strong> 89% foraging efficiency in complex navigation • Patent pending • Publications in
-                Nature Reviews Bioengineering and Sensors.
-              </p>
-              <div class="project-card__links">
-                <a href="https://github.com/Chandan118" target="_blank" rel="noreferrer" class="accent-glow">GitHub Repository</a>
-                <a href="#" aria-disabled="true">Research Paper</a>
-                <a href="#" aria-disabled="true">Demo Video</a>
-              </div>
-            </article>
-
-            <article class="project-card" data-project-card data-project-topics="navigation, edge-ai">
-              <div class="project-card__header">
-                <span class="project-card__icon" aria-hidden="true">🧭</span>
-                <div>
-                  <h3>Robust Navigation Framework for GPS-Denied Environments</h3>
-                  <p class="project-card__meta">
-                    Lead Developer &nbsp;|&nbsp; BIT Navigation Lab &nbsp;|&nbsp; 2023–Present
-                  </p>
-                </div>
-              </div>
-              <p class="project-card__summary">
-                Autonomy stack delivering resilient localization and planning under sensor degradation and environmental uncertainty.
-              </p>
-              <ul class="project-card__list">
-                <li>Multi-modal sensor fusion (LiDAR-IMU-Vision) with Extended Kalman Filter</li>
-                <li>Bio-inspired Ant Colony Optimization integrated with deep Q-learning</li>
-                <li>ROS 2 and Gazebo simulation with realistic perturbation modeling</li>
-                <li>Real-time SLAM and motion planning in dynamic environments</li>
-              </ul>
-              <p class="project-card__outcomes">
-                <strong>Performance:</strong> Validated in cluttered indoor/outdoor environments • Robust to sensor failure.
-              </p>
-              <div class="project-card__links">
-                <a href="https://github.com/Chandan118" target="_blank" rel="noreferrer" class="accent-glow">GitHub Repository</a>
-                <a href="#" aria-disabled="true">Conference Paper</a>
-              </div>
-            </article>
-
-            <article class="project-card" data-project-card data-project-topics="assistive, edge-ai">
-              <div class="project-card__header">
-                <span class="project-card__icon" aria-hidden="true">🏥</span>
-                <div>
-                  <h3>Smart Wheelchair &amp; Cloud-Assistive System</h3>
-                  <p class="project-card__meta">
-                    System Architect &nbsp;|&nbsp; BIT Assistive Robotics &nbsp;|&nbsp; 2024–Present
-                  </p>
-                </div>
-              </div>
-              <p class="project-card__summary">
-                IoT-enabled assistive platform integrating real-time telemetry, adaptive control interfaces, and cloud analytics.
-              </p>
-              <ul class="project-card__list">
-                <li>Cloud-connected platform capturing high-frequency telemetry streams</li>
-                <li>Adaptive control interfaces tailored for heterogeneous user capabilities</li>
-                <li>Predictive analytics for preventive maintenance and utilization insights</li>
-                <li>Secure REST APIs enabling remote assistance workflows</li>
-              </ul>
-              <p class="project-card__outcomes">
-                <strong>Impact:</strong> Enhances independence for mobility-impaired users • Scalable monitoring for healthcare providers.
-              </p>
-              <div class="project-card__links">
-                <a href="https://github.com/Chandan118" target="_blank" rel="noreferrer" class="accent-glow">GitHub Repository</a>
-                <a href="#" aria-disabled="true">System Design</a>
-              </div>
-            </article>
-
-            <article class="project-card" data-project-card data-project-topics="aerospace, navigation">
-              <div class="project-card__header">
-                <span class="project-card__icon" aria-hidden="true">🛰️</span>
-                <div>
-                  <h3>Aerospace Sensor Systems &amp; Reliability Analysis</h3>
-                  <p class="project-card__meta">
-                    Research Contributor &nbsp;|&nbsp; Multi-institutional Collaboration &nbsp;|&nbsp; 2021–2023
-                  </p>
-                </div>
-              </div>
-              <p class="project-card__summary">
-                Wearable monitoring and reliability evaluation frameworks for aerospace applications focused on mission assurance.
-              </p>
-              <ul class="project-card__list">
-                <li>Sensor fusion algorithms for cognitive workload assessment</li>
-                <li>Performance degradation modeling for aerospace engine diagnostics</li>
-                <li>Reliability framework recognized with IEEE IATMSI Best Paper Award</li>
-                <li>Multi-institutional publications in aerospace engineering journals</li>
-              </ul>
-              <div class="project-card__links">
-                <a href="https://github.com/Chandan118" target="_blank" rel="noreferrer" class="accent-glow">GitHub Repository</a>
-                <a href="#" aria-disabled="true">Award Certificate</a>
-              </div>
-            </article>
+          <div class="nature-pill-metric">
+            <i class="fa-solid fa-microchip" style="color:var(--nj-red);"></i> ROS 2 / Embedded Hardware
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="page-section page-section--alt">
-        <div class="container">
-          <div class="page-section__header">
-            <h2>Deployment Metrics</h2>
-            <p class="section__description">
-              Quantifiable performance indicators captured across simulation, lab validation, and field trials.
-            </p>
-          </div>
-          <div class="metric-grid">
-            <article class="metric">
-              <p class="metric__value">89%</p>
-              <p class="metric__label">Foraging efficiency in adversarial swarm trials</p>
-            </article>
-            <article class="metric">
-              <p class="metric__value">&le;1.2 W</p>
-              <p class="metric__label">Average power draw for hexapedal locomotion</p>
-            </article>
-            <article class="metric">
-              <p class="metric__value">4+</p>
-              <p class="metric__label">Integrated sensing modalities per navigation stack</p>
-            </article>
-            <article class="metric">
-              <p class="metric__value">IEEE</p>
-              <p class="metric__label">Best Paper Award for reliability framework</p>
-            </article>
-          </div>
+    <!-- Nature Filter Toolbar -->
+    <div class="nature-filter-bar">
+      <div class="container nature-filter-flex">
+        <div class="nature-filter-group">
+          <button class="nature-filter-chip active" data-filter="all">All Systems</button>
+          <button class="nature-filter-chip" data-filter="swarm">Swarm Robotics</button>
+          <button class="nature-filter-chip" data-filter="navigation">Navigation &amp; SLAM</button>
+          <button class="nature-filter-chip" data-filter="assistive">Assistive Systems</button>
+          <button class="nature-filter-chip" data-filter="aerospace">Aerospace &amp; Embedded</button>
         </div>
-      </section>
+        <div class="nature-search-box">
+          <i class="fa-solid fa-magnifying-glass nature-search-icon"></i>
+          <input type="text" class="nature-search-input" placeholder="Search systems by keyword..." />
+        </div>
+      </div>
+    </div>
 
-      <section class="page-section">
-        <div class="container">
-          <div class="callout">
-            <h3 class="callout__title">Bring resilience to your field deployments.</h3>
-            <p class="callout__body">
-              Collaborative projects welcome across swarm robotics, autonomous navigation, and assistive technology.
-              Reach out via <a href="mailto:chandan@bit.edu.cn">email</a> to initiate a technical deep dive.
-            </p>
-          </div>
+    <!-- Main Projects Catalog -->
+    <main class="nature-content-section">
+      <div class="container">
+        <div class="nature-projects-grid">
+          
+          <!-- Project 1: FormicaBot Swarm Platform -->
+          <article class="nature-project-card" data-filter-item data-category="swarm">
+            <div class="nature-pillar-img-box" data-figure-box data-figure-title="FormicaBot: Swarm Robotics Platform" data-figure-caption="FormicaBot bio-inspired autonomous navigation and multi-agent collective foraging stack.">
+              <img src="../../assets/images/project-nav.png" alt="FormicaBot Swarm Robotics Platform" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Inspect Hardware
+              </div>
+            </div>
+            <div class="nature-project-body">
+              <div class="nature-card-meta">
+                <span class="nature-journal-badge badge-nature">Swarm Robotics</span>
+                <span class="nature-pub-status status-published">Active Testbed</span>
+              </div>
+              <h2 class="nature-article-title" style="font-size: 1.35rem;">
+                FormicaBot: Bio-Inspired Swarm Robotics Platform
+              </h2>
+              <p class="nature-abstract-text" style="font-size: 0.88rem;">
+                Custom hexapedal mobile platform closing the simulation-to-reality gap in collective intelligence. Implements dual-modality synthetic pheromone communication (optical/thermal projection) and decentralized stigmergy under strict energy budgets.
+              </p>
+              
+              <table class="nature-spec-table">
+                <tbody>
+                  <tr>
+                    <td>Compute Architecture</td>
+                    <td>STM32F4 + Raspberry Pi Zero 2W / ESP32-S3</td>
+                  </tr>
+                  <tr>
+                    <td>Locomotion Power</td>
+                    <td>&le;1.2 W average consumption (hexapod gait)</td>
+                  </tr>
+                  <tr>
+                    <td>Swarm Stigmergy</td>
+                    <td>Stochastic reaction-diffusion PDE pheromone maps</td>
+                  </tr>
+                  <tr>
+                    <td>Edge Perception</td>
+                    <td>Quantized MobileNetV3 + 120 FPS optical flow</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="nature-article-actions" style="margin-top: auto;">
+                <a href="https://github.com/Chandan118" target="_blank" class="nature-btn-doi">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+                <a href="research.html" class="nature-btn-pdf">
+                  <i class="fa-solid fa-circle-info"></i> Research Atlas
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Nav2-Depth-Anything Autonomous Navigation -->
+          <article class="nature-project-card" data-filter-item data-category="navigation">
+            <div class="nature-pillar-img-box" data-figure-box data-figure-title="Nav2-Depth-Anything Autonomous Navigation" data-figure-caption="Zero-shot monocular foundation depth models integrated into ROS 2 Nav2 costmaps.">
+              <img src="../../assets/images/Neuromorphic Navigation for Autonomous Robots.png" alt="Nav2-Depth-Anything Navigation Stack" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Architecture Diagram
+              </div>
+            </div>
+            <div class="nature-project-body">
+              <div class="nature-card-meta">
+                <span class="nature-journal-badge badge-cell">Navigation &amp; SLAM</span>
+                <span class="nature-pub-status status-published">ROS 2 Package</span>
+              </div>
+              <h2 class="nature-article-title" style="font-size: 1.35rem;">
+                Nav2-Depth-Anything: Foundation Vision for GPS-Denied Robots
+              </h2>
+              <p class="nature-abstract-text" style="font-size: 0.88rem;">
+                Integration of state-of-the-art zero-shot monocular depth estimation foundation models directly into the ROS 2 Nav2 navigation ecosystem. Generates real-time pseudo-pointclouds and obstacle clearance costmaps from a single RGB camera stream.
+              </p>
+              
+              <table class="nature-spec-table">
+                <tbody>
+                  <tr>
+                    <td>Framework / Middleware</td>
+                    <td>ROS 2 Humble / Iron, Nav2 Costmap 2D plugin</td>
+                  </tr>
+                  <tr>
+                    <td>Inference Latency</td>
+                    <td>28 ms on NVIDIA Jetson Orin Nano (TensorRT FP16)</td>
+                  </tr>
+                  <tr>
+                    <td>Sensory Fallback</td>
+                    <td>Dynamic multi-modal recovery upon camera degradation</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="nature-article-actions" style="margin-top: auto;">
+                <a href="https://github.com/Chandan118/Nav2-Depth-Anything" target="_blank" class="nature-btn-doi">
+                  <i class="fa-brands fa-github"></i> View ROS 2 Stack
+                </a>
+                <a href="publications.html" class="nature-btn-pdf">
+                  <i class="fa-solid fa-newspaper"></i> Related Papers
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Assistive Smart Mobility & IoT Platform -->
+          <article class="nature-project-card" data-filter-item data-category="assistive">
+            <div class="nature-pillar-img-box" data-figure-box data-figure-title="Assistive Smart Mobility & IoT Platform" data-figure-caption="Cloud-connected telemetry and human-in-the-loop assistive control wheelchair.">
+              <img src="../../assets/images/project-iot.png" alt="Assistive Smart Mobility Platform" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Inspect System
+              </div>
+            </div>
+            <div class="nature-project-body">
+              <div class="nature-card-meta">
+                <span class="nature-journal-badge badge-sensors">Assistive Systems</span>
+                <span class="nature-pub-status status-published">Deployed Prototype</span>
+              </div>
+              <h2 class="nature-article-title" style="font-size: 1.35rem;">
+                Assistive Smart Mobility &amp; Real-Time Telemetry IoT
+              </h2>
+              <p class="nature-abstract-text" style="font-size: 0.88rem;">
+                Full-stack intelligent mobility solution incorporating real-time telemetry streaming, multi-sensor collision avoidance, and adaptive human-in-the-loop shared control interfaces designed for individuals with severe mobility impairments.
+              </p>
+              
+              <table class="nature-spec-table">
+                <tbody>
+                  <tr>
+                    <td>Connectivity &amp; Cloud</td>
+                    <td>Secure MQTT over TLS, WebSockets, REST APIs</td>
+                  </tr>
+                  <tr>
+                    <td>Safety Interlocks</td>
+                    <td>Predictive LiDAR/sonar envelope obstacle braking</td>
+                  </tr>
+                  <tr>
+                    <td>Human Machine Interface</td>
+                    <td>Adaptive joystick gain + head-pose tracking control</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="nature-article-actions" style="margin-top: auto;">
+                <a href="https://github.com/Chandan118" target="_blank" class="nature-btn-doi">
+                  <i class="fa-brands fa-github"></i> GitHub Release
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Aerospace Sensor Systems & Reliability Framework -->
+          <article class="nature-project-card" data-filter-item data-category="aerospace">
+            <div class="nature-pillar-img-box" data-figure-box data-figure-title="Aerospace Sensor Diagnostics" data-figure-caption="IEEE Best Paper Award winning framework for prognostic health monitoring.">
+              <img src="../../assets/images/project-embedded.png" alt="Aerospace Sensor Diagnostics" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Diagnostic Board
+              </div>
+            </div>
+            <div class="nature-project-body">
+              <div class="nature-card-meta">
+                <span class="nature-journal-badge badge-aiaa">Aerospace &amp; Embedded</span>
+                <span class="nature-pub-status status-award"><i class="fa-solid fa-trophy"></i> Best Paper Award</span>
+              </div>
+              <h2 class="nature-article-title" style="font-size: 1.35rem;">
+                Aerospace Sensor Systems &amp; Propulsion Diagnostics
+              </h2>
+              <p class="nature-abstract-text" style="font-size: 0.88rem;">
+                Machine-learning-assisted prognostic health monitoring (PHM) and failure probability degradation modeling for mission-critical turbomachinery and flight avionics under dynamic vibrational stresses.
+              </p>
+              
+              <table class="nature-spec-table">
+                <tbody>
+                  <tr>
+                    <td>Award Distinction</td>
+                    <td>IEEE IATMSI Best Paper Award recipient</td>
+                  </tr>
+                  <tr>
+                    <td>Diagnostic Pipeline</td>
+                    <td>Bayesian neural estimation of component fatigue</td>
+                  </tr>
+                  <tr>
+                    <td>Telemetry Validation</td>
+                    <td>High-frequency multi-channel accelerometer &amp; thermal logging</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="nature-article-actions" style="margin-top: auto;">
+                <a href="https://github.com/Chandan118" target="_blank" class="nature-btn-doi">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+                <a href="publications.html" class="nature-btn-pdf">
+                  <i class="fa-solid fa-file-pdf"></i> Read Conference Paper
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
-      </section>
+
+        <!-- Metric Grid Highlight -->
+        <section class="nature-protocol-section" style="margin-top: 1rem;">
+          <div class="nature-protocol-header">
+            <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--nj-red);">
+              BENCHMARK PERFORMANCE
+            </span>
+            <h3 class="nature-protocol-title">Empirical Deployment Metrics</h3>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; text-align: center;">
+            <div style="background:var(--nj-bg); padding: 1.5rem; border: 1px solid var(--nj-border); border-radius: 4px;">
+              <div style="font-size: 2.2rem; font-weight: 700; color: var(--nj-red); font-family: var(--nj-font-serif);">&le;1.2 W</div>
+              <div style="font-size: 0.85rem; color: var(--nj-text-muted); margin-top: 4px;">Hexapedal Locomotion Power</div>
+            </div>
+            <div style="background:var(--nj-bg); padding: 1.5rem; border: 1px solid var(--nj-border); border-radius: 4px;">
+              <div style="font-size: 2.2rem; font-weight: 700; color: var(--nj-red); font-family: var(--nj-font-serif);">89%</div>
+              <div style="font-size: 0.85rem; color: var(--nj-text-muted); margin-top: 4px;">Foraging Swarm Efficiency</div>
+            </div>
+            <div style="background:var(--nj-bg); padding: 1.5rem; border: 1px solid var(--nj-border); border-radius: 4px;">
+              <div style="font-size: 2.2rem; font-weight: 700; color: var(--nj-red); font-family: var(--nj-font-serif);">28 ms</div>
+              <div style="font-size: 0.85rem; color: var(--nj-text-muted); margin-top: 4px;">Edge Monocular Depth Latency</div>
+            </div>
+            <div style="background:var(--nj-bg); padding: 1.5rem; border: 1px solid var(--nj-border); border-radius: 4px;">
+              <div style="font-size: 2.2rem; font-weight: 700; color: var(--nj-red); font-family: var(--nj-font-serif);">IEEE</div>
+              <div style="font-size: 0.85rem; color: var(--nj-text-muted); margin-top: 4px;">Best Paper Award Conferred</div>
+            </div>
+          </div>
+        </section>
+
+      </div>
     </main>
 
-    <footer class="footer">
-      <div class="container footer__content">
-        <p>&copy; <span id="year"></span> Chandan Sheikder. All rights reserved.</p>
-        <a href="#top">Back to top ↑</a>
+    <!-- Interactive Lightbox Modal -->
+    <div id="nature-modal" class="nature-modal" role="dialog" aria-modal="true">
+      <div class="nature-modal-content">
+        <button id="nature-modal-close" class="nature-modal-close" aria-label="Close image modal">&times;</button>
+        <img id="nature-modal-img" class="nature-modal-img" src="" alt="High resolution diagram" />
+        <div class="nature-modal-info">
+          <h3 id="nature-modal-title" class="nature-modal-title">System Architecture</h3>
+          <p id="nature-modal-caption" class="nature-modal-caption"></p>
+          <a id="nature-modal-doi" href="#" target="_blank" class="nature-btn-doi" style="display:none;">
+            <i class="fa-brands fa-github"></i> View Repository
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nature Footer -->
+    <footer class="nature-footer">
+      <div class="container nature-footer-inner">
+        <div>
+          &copy; 2026 Chandan Sheikder. Bio-Robotics &amp; Autonomous Systems Laboratory.
+        </div>
+        <div class="nature-footer-links">
+          <a href="../../index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications</a>
+          <a href="https://scholar.google.com/citations?user=UWNJ6TwAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </div>
       </div>
     </footer>
 
-    <script src="../config/site-config.js" defer></script>
-    <script src="../config/seo-config.js" defer></script>
-    <script src="../scripts/main.js" defer></script>
-    <script src="../scripts/projects.js" defer></script>
-    <script src="../scripts/analytics.js" defer></script>
+    <script src="../scripts/nature-journal.js" defer></script>
   </body>
 </html>

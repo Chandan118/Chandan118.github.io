@@ -3,237 +3,342 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Research Domains | Chandan Sheikder</title>
+    <title>Research Domains &amp; Scientific Methodology | Chandan Sheikder | Nature Portfolio Style</title>
     <meta
       name="description"
-      content="Deep dive into bio-inspired navigation, swarm intelligence, sensor fusion, edge AI, and autonomous system energy optimization."
+      content="Nature Portfolio style research domain atlas of Chandan Sheikder: bio-inspired navigation, neuromorphic sensory computing, extreme-environment autonomy, and swarm robotics."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles/animations.css" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="../styles/research.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../styles/nature-journal.css" />
   </head>
-  <body data-page="research">
-    <header class="page-hero" id="top">
-      <div class="page-hero__overlay"></div>
+  <body class="nature-journal-body" data-page="research">
+    <!-- Nature Top Masthead Ribbon -->
+    <div class="nature-masthead-ribbon">
       <div class="container">
-        <nav class="nav" data-nav>
-          <a class="nav__brand" data-nav-brand href="../index.html#top">Chandan Sheikder</a>
-          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-            <span class="nav__toggle-bar"></span>
-            <span class="nav__toggle-bar"></span>
-            <span class="nav__toggle-bar"></span>
-          </button>
-          <div class="nav__menu" id="nav-menu" data-nav-menu>
-            <a href="../index.html#top">Home</a>
-            <a href="../index.html#vision">Vision</a>
-            <a href="../index.html#domains">Domains</a>
-            <a href="projects.html">Projects</a>
-            <a href="research.html">Research</a>
-            <a href="publications.html">Publications</a>
-            <a href="../index.html#contact">Contact</a>
-          </div>
-        </nav>
-        <div class="page-hero__headline fade-in-up">
-          <span class="page-hero__eyebrow">Research Domain Atlas</span>
-          <h1 class="page-hero__title">
-            Bridging biological intelligence with autonomous robotic systems.
-          </h1>
-          <p class="page-hero__lead">
-            Translating discoveries in collective behavior, sensorimotor adaptation, and embodied cognition into
-            resilient autonomous platforms capable of navigating uncertain environments with minimal supervision.
-          </p>
+        <div class="nature-ribbon-tag">
+          <span class="nature-ribbon-dot"></span>
+          <span>NATURE PORTFOLIO ARCHIVE &middot; RESEARCH DOMAIN ATLAS</span>
         </div>
+        <div class="nature-ribbon-meta">
+          <span>Beijing Institute of Technology &middot; Mechatronical Robotics Lab</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nature Sticky Header -->
+    <header class="nature-header">
+      <div class="container nature-nav-inner">
+        <a href="../../index.html" class="nature-brand">
+          <div class="nature-brand-title">CHANDAN <span>SHEIKDER</span></div>
+          <div class="nature-brand-sub">Bio-Robotics &amp; Autonomous Intelligence Lab</div>
+        </a>
+
+        <button class="nature-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
+
+        <nav class="nature-nav-links">
+          <a href="../../index.html" class="nature-nav-link">Home</a>
+          <a href="research.html" class="nature-nav-link active">Research</a>
+          <a href="projects.html" class="nature-nav-link">Projects</a>
+          <a href="publications.html" class="nature-nav-link">Publications</a>
+          <a href="../../assets/CV_Chandan.pdf" target="_blank" class="nature-nav-btn">
+            <i class="fa-regular fa-file-pdf"></i> Curriculum Vitae
+          </a>
+        </nav>
       </div>
     </header>
 
-    <main>
-      <section class="page-section">
-        <div class="container">
-          <div class="page-section__header">
-            <h2>Integrative Research Pillars</h2>
-            <p class="section__description">
-              Core pillars interlock across simulation, hardware, and algorithm design to enable full-stack innovation
-              in bio-robotics and autonomous intelligence.
-            </p>
+    <!-- Nature Editorial Hero Banner -->
+    <section class="nature-editorial-hero">
+      <div class="container">
+        <div class="nature-breadcrumb">
+          <a href="../../index.html">Home</a> &rsaquo; <span>Research</span> &rsaquo; <span>Scientific Domain Atlas</span>
+        </div>
+        <span class="nature-journal-tag">RESEARCH DOMAIN ATLAS &middot; EDITORIAL FOCUS</span>
+        <h1 class="nature-editorial-title">
+          Embodied Biological Intelligence &amp; Autonomous Robotic Systems
+        </h1>
+        <p class="nature-editorial-lede">
+          Bridging ethological observations of animal navigation and collective swarm behavior with physical edge computation, silicon retinas, and robust non-linear control to conquer GPS-denied, communication-starved environments.
+        </p>
+
+        <div class="nature-author-strip">
+          <div>Principal Investigator: <strong>Chandan Sheikder</strong></div>
+          <div>Specialization: <strong>Bio-Robotics, Neuromorphic SLAM, Swarm Intelligence</strong></div>
+          <div class="nature-pill-metric">
+            <i class="fa-solid fa-microchip" style="color:var(--nj-red);"></i> Neuromorphic Edge AI
           </div>
-          <div class="research-grid">
-            <article class="research-card">
-              <h3>Bio-inspired Navigation Systems</h3>
-              <p>
-                Physiologically grounded navigation models drawing on insect foraging, ant pheromone signaling, and
-                marine animal sensory fusion to guide robust path planning under uncertainty.
-              </p>
-              <ul class="list-tight">
-                <li>Stochastic PDE modeling of collective search and homing behaviors</li>
-                <li>Adaptive pheromone and virtual chemical communication models</li>
-                <li>Hybrid SLAM-informed navigation with morphological computation</li>
-              </ul>
-            </article>
-            <article class="research-card">
-              <h3>Swarm Robotics &amp; Collective Intelligence</h3>
-              <p>
-                Collective behaviors optimized through evolutionary design, decentralized control, and formal stability
-                analysis for large robot cohorts.
-              </p>
-              <ul class="list-tight">
-                <li>Decentralized consensus and fault-tolerant behavior synchronization</li>
-                <li>Physics-informed reinforcement learning for swarm adaptation</li>
-                <li>Resilience metrics for dynamic task allocation and energy budgets</li>
-              </ul>
-            </article>
-            <article class="research-card">
-              <h3>Sensor Fusion &amp; Edge AI</h3>
-              <p>
-                Edge-optimized neural perception combined with classical estimation pipelines to deliver reliable situational awareness on constrained hardware.
-              </p>
-              <ul class="list-tight">
-                <li>LiDAR/IMU/RGB-D fusion with Extended and Unscented Kalman Filters</li>
-                <li>Quantized CNNs and transformer hybrids for onboard inference</li>
-                <li>Self-supervised multimodal alignment for state estimation</li>
-              </ul>
-            </article>
-            <article class="research-card">
-              <h3>Medical &amp; Assistive Robotics</h3>
-              <p>
-                Human-centered mechatronic platforms integrating physiological sensing, adaptive control interfaces, and distributed monitoring.
-              </p>
-              <ul class="list-tight">
-                <li>Adaptive intent recognition for diverse motor capabilities</li>
-                <li>Cloud-assisted autonomy with secure data pipelines</li>
-                <li>Human-in-the-loop safety envelopes and explainable feedback</li>
-              </ul>
-            </article>
-            <article class="research-card">
-              <h3>Energy-Efficient Autonomous Systems</h3>
-              <p>
-                Co-designing hardware and control policies to minimize power draw while preserving mission performance across challenging terrains.
-              </p>
-              <ul class="list-tight">
-                <li>Hexapedal gait optimization under terrain perturbations</li>
-                <li>Dynamic voltage and frequency scaling with task-aware scheduling</li>
-                <li>Battery health estimation and endurance-aware planning</li>
-              </ul>
-            </article>
+          <div class="nature-pill-metric">
+            <i class="fa-solid fa-compass" style="color:var(--nj-red);"></i> GPS-Denied Autonomy
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="page-section page-section--alt">
-        <div class="container">
-          <div class="page-section__header">
-            <h2>Cross-Disciplinary Method Stack</h2>
-            <p class="section__description">
-              End-to-end methodology aligning biological validation, simulation fidelity, and deployable hardware.
-            </p>
-          </div>
-          <div class="methodology-grid">
-            <article class="method-card">
-              <h3>Biological Ground Truth</h3>
-              <p>
-                Laboratory observation and high-speed tracking of eusocial insects to parameterize agent-based and continuum models.
-              </p>
-              <ul class="list-tight">
-                <li>Behavioral dataset construction</li>
-                <li>Neuroethological signal analysis</li>
-                <li>Data-driven hypothesis testing</li>
-              </ul>
-            </article>
-            <article class="method-card">
-              <h3>Simulation to Reality</h3>
-              <p>
-                Physics-informed multi-agent simulation pipelines emulating environmental stressors and heterogeneous hardware profiles.
-              </p>
-              <ul class="list-tight">
-                <li>ROS 2, Gazebo, Webots co-simulation</li>
-                <li>Domain randomization and curriculum training</li>
-                <li>Validation suites for real-world transfer</li>
-              </ul>
-            </article>
-            <article class="method-card">
-              <h3>Fielded Autonomy</h3>
-              <p>
-                Embedded deployments leveraging Jetson-class compute, distributed sensing, and cloud orchestration for mission-critical robotics.
-              </p>
-              <ul class="list-tight">
-                <li>Edge AI model compression and profiling</li>
-                <li>Secure OTA updates and telemetry</li>
-                <li>Resilience scoring under perturbations</li>
-              </ul>
-            </article>
-          </div>
+    <!-- Main Research Content -->
+    <main class="nature-content-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div style="border-bottom: 2px solid var(--nj-red); padding-bottom: 0.75rem; margin-bottom: 2.5rem;">
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--nj-red);">
+            INVESTIGATIVE PILLARS
+          </span>
+          <h2 style="font-family: var(--nj-font-serif); font-size: 2rem; color: var(--nj-text-dark); margin: 0.25rem 0 0;">
+            Core Scientific Pillars &amp; Breakthroughs
+          </h2>
         </div>
-      </section>
 
-      <section class="page-section">
-        <div class="container">
-          <div class="split research-split">
-            <div class="summary-card">
-              <h3 class="summary-card__title">Experimental Platforms</h3>
-              <p class="summary-card__body">
-                Purpose-built platforms including the FormicaBot swarm testbed, sensor-rich navigation arenas, and smart assistive devices with human-in-the-loop evaluation protocols.
-              </p>
+        <!-- Pillar 1: Neuromorphic Bio-Navigation -->
+        <article class="nature-article-card" style="margin-bottom: 2.5rem;">
+          <div>
+            <div class="nature-card-meta">
+              <span class="nature-journal-badge badge-nature">Featured in Nature Reviews Bioengineering</span>
+              <span class="nature-journal-badge badge-cell">Cell Press (Device)</span>
             </div>
-            <div class="summary-card">
-              <h3 class="summary-card__title">Validation Metrics</h3>
-              <ul class="list-tight">
-                <li>Foraging efficiency curves across adversarial terrains</li>
-                <li>Navigation success rate under sensor degradation</li>
-                <li>Power-performance trade-off envelopes for legged robots</li>
-                <li>Human factors assessment for assistive control schemes</li>
+            <h3 class="nature-article-title">
+              1. Neuromorphic Navigation &amp; Insect-Inspired Sensory Processing
+            </h3>
+            <p class="nature-abstract-text">
+              Traditional robotic vision pipelines rely on power-hungry, fixed-frame-rate cameras that induce motion blur and high latency. Our research translates the biological neural architecture of insect central complex (CX) circuits—specifically ring-attractor heading compasses and optic-flow path integration—into neuromorphic hardware using event cameras (DVS) and spiking neural networks (SNNs).
+            </p>
+            <div class="nature-key-findings">
+              <strong>Scientific Contributions</strong>
+              <ul>
+                <li>Formulated asynchronous event-driven SLAM algorithms reducing processing latency to sub-millisecond scales.</li>
+                <li>Achieved over 80% reduction in computational power compared to conventional visual-inertial odometry.</li>
+                <li>Validated on ultra-low-power micro-robot platforms navigating cluttered obstacle fields.</li>
               </ul>
             </div>
+            <div class="nature-article-actions">
+              <a href="publications.html" class="nature-btn-doi">
+                <i class="fa-solid fa-book-open"></i> Read Related Papers
+              </a>
+              <a href="https://doi.org/10.1038/s44222-025-00367-6" target="_blank" class="nature-btn-pdf">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.1038/s44222-025-00367-6
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+          <div class="nature-figure-aside">
+            <div class="nature-figure-box" data-figure-box data-figure-title="Neuromorphic Navigation Architecture" data-figure-caption="Fig. 1 | Neural path integration circuitry inspired by insect central complex translated into spike-based silicon event processing." data-doi="https://doi.org/10.1038/s44222-025-00367-6">
+              <img src="../../assets/images/Bio-inspired navigation systems for robots.png" alt="Figure: Bio-inspired navigation systems" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Fig. 1
+              </div>
+            </div>
+            <p class="nature-figure-caption">
+              <strong>Fig. 1 | Biological Circuitry to Silicon SLAM.</strong> Insect CX neural pathways translated into asynchronous event processing.
+            </p>
+            <div class="nature-journal-logo-box">
+              <img src="../../assets/logos/nature-reviews-bioengineering.png" alt="Nature Reviews Bioengineering" />
+            </div>
+          </div>
+        </article>
 
-      <section class="page-section page-section--alt">
-        <div class="container">
-          <div class="page-section__header">
-            <h2>Collaboration Pathways</h2>
-            <p class="section__description">
-              Research efforts integrate with international labs and interdisciplinary teams to accelerate impact.
+        <!-- Pillar 2: Marine-Inspired Multimodal Sensor Fusion -->
+        <article class="nature-article-card" style="margin-bottom: 2.5rem;">
+          <div>
+            <div class="nature-card-meta">
+              <span class="nature-journal-badge badge-sensors">Featured in MDPI Sensors</span>
+              <span class="nature-pub-status status-published">Published Research</span>
+            </div>
+            <h3 class="nature-article-title">
+              2. Marine-Inspired Multimodal Sensor Fusion &amp; Amphibious Autonomy
+            </h3>
+            <p class="nature-abstract-text">
+              Aquatic and turbid subterranean environments completely incapacitate classical optical SLAM due to light scattering, suspended matter, and lack of distinct visual features. Drawing inspiration from the lateral-line organ of blind cavefish and seal vibrissae, we design multimodal sensor arrays integrating differential pressure/flow sensors, inertial measurement units (IMUs), and low-light event vision.
+            </p>
+            <div class="nature-key-findings">
+              <strong>Key Results &amp; Architecture</strong>
+              <ul>
+                <li>Developed Extended Kalman Filter (EKF) and neural residual estimators reconciling asynchronous hydrodynamic and visual telemetry.</li>
+                <li>Continuous metric state estimation maintained even when visual feedback drops below 5% fidelity.</li>
+              </ul>
+            </div>
+            <div class="nature-article-actions">
+              <a href="https://doi.org/10.3390/s25216627" target="_blank" class="nature-btn-doi">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Access Article (Sensors)
+              </a>
+            </div>
+          </div>
+          <div class="nature-figure-aside">
+            <div class="nature-figure-box" data-figure-box data-figure-title="Marine-Inspired Multimodal Sensor Fusion" data-figure-caption="Fig. 2 | Multimodal hydrodynamic flow, IMU, and neuromorphic vision pipeline for subaquatic robot state estimation." data-doi="https://doi.org/10.3390/s25216627">
+              <img src="../../assets/images/Marine-Inspired Multimodal Sensor Fusion and Neuromorphic Processing for Autonomous Navigation.png" alt="Figure: Marine-Inspired Multimodal Fusion" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Fig. 2
+              </div>
+            </div>
+            <p class="nature-figure-caption">
+              <strong>Fig. 2 | Multimodal Hydrodynamic Fusion.</strong> Flow-assisted localization pipeline for GPS-denied aquatic environments.
+            </p>
+            <div class="nature-journal-logo-box">
+              <img src="../../assets/logos/sensors-logo.png" alt="MDPI Sensors logo" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Pillar 3: Soft Computing & Tethered Navigation -->
+        <article class="nature-article-card" style="margin-bottom: 2.5rem;">
+          <div>
+            <div class="nature-card-meta">
+              <span class="nature-journal-badge badge-wiley">Featured in Journal of Field Robotics</span>
+              <span class="nature-pub-status status-published">Wiley Core Archive</span>
+            </div>
+            <h3 class="nature-article-title">
+              3. Soft Computing &amp; Tethered Robotic Exploration in Extreme Environments
+            </h3>
+            <p class="nature-abstract-text">
+              Tethered exploration robots enable continuous multi-kilowatt power and high-bandwidth telemetry into extreme environments (e.g. radioactive facilities, vertical disaster shafts, deep pipelines), but face high risks of cable entanglement and snagging. We introduced a soft computing framework combining neuro-fuzzy inference systems with catenary shape prediction to guarantee clearance envelopes.
+            </p>
+            <div class="nature-key-findings">
+              <strong>Field Robotics Impact</strong>
+              <ul>
+                <li>Closed-loop tension control and dynamic anchor-point mapping prevents cable entrapment around complex geometric obstacles.</li>
+                <li>Empirically validated in industrial pipeline inspection and dynamic confined arena setups.</li>
+              </ul>
+            </div>
+            <div class="nature-article-actions">
+              <a href="https://onlinelibrary.wiley.com/doi/10.1002/rob.70222" target="_blank" class="nature-btn-doi">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Read at Wiley Library
+              </a>
+              <a href="../../assets/images/Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots.pdf" target="_blank" class="nature-btn-pdf">
+                <i class="fa-regular fa-file-pdf"></i> Download Paper PDF
+              </a>
+            </div>
+          </div>
+          <div class="nature-figure-aside">
+            <div class="nature-figure-box" data-figure-box data-figure-title="Adaptive Hybrid Navigation for Tethered Robots" data-figure-caption="Fig. 3 | Soft computing catenary profile modeling and hybrid obstacle clearance control for tethered platforms." data-doi="https://onlinelibrary.wiley.com/doi/10.1002/rob.70222">
+              <img src="../../assets/images/Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots.png" alt="Figure: Soft Computing Tethered Navigation" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Fig. 3
+              </div>
+            </div>
+            <p class="nature-figure-caption">
+              <strong>Fig. 3 | Catenary Profile Estimation.</strong> Neuro-fuzzy tension and clearance regulation.
+            </p>
+            <div class="nature-journal-logo-box">
+              <img src="../../assets/logos/journal-of-field-robotics.jpg" alt="Journal of Field Robotics logo" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Pillar 4: Interplanetary Autonomy & Radiation Resilience -->
+        <article class="nature-article-card" style="margin-bottom: 3.5rem;">
+          <div>
+            <div class="nature-card-meta">
+              <span class="nature-journal-badge badge-aiaa">Featured in AIAA JAIS</span>
+              <span class="nature-pub-status status-published">Published Aerospace Article</span>
+            </div>
+            <h3 class="nature-article-title">
+              4. Interplanetary Communication Latency &amp; Radiation-Resilient Cognitive AI
+            </h3>
+            <p class="nature-abstract-text">
+              Deep space exploration rovers operate under one-way communication latency spanning 3 to 22 minutes, precluding real-time Earth teleoperation. Concurrently, cosmic galactic radiation causes single-event upsets (SEUs) in deep learning neural weights. We developed fault-tolerant distributed decision trees and self-healing weight checkpoints that maintain safe rover traverse autonomously.
+            </p>
+            <div class="nature-article-actions">
+              <a href="https://arc.aiaa.org/doi/10.2514/1.I011710" target="_blank" class="nature-btn-doi">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Read at AIAA Arc
+              </a>
+              <a href="../../assets/images/Autonomous Space Exploration, Interplanetary Communication Latency.pdf" target="_blank" class="nature-btn-pdf">
+                <i class="fa-regular fa-file-pdf"></i> Full Article PDF
+              </a>
+            </div>
+          </div>
+          <div class="nature-figure-aside">
+            <div class="nature-figure-box" data-figure-box data-figure-title="Autonomous Deep Space Exploration Under Radiation & Latency" data-figure-caption="Fig. 4 | Interplanetary communication delay timeline and autonomous cognitive fail-safe architecture." data-doi="https://arc.aiaa.org/doi/10.2514/1.I011710">
+              <img src="../../assets/images/Autonomous Space Exploration, Interplanetary Communication Latency.png" alt="Figure: Autonomous Space Exploration" loading="lazy" />
+              <div class="nature-figure-overlay">
+                <i class="fa-solid fa-expand"></i> Fig. 4
+              </div>
+            </div>
+            <p class="nature-figure-caption">
+              <strong>Fig. 4 | Deep-Space Autonomous Protocols.</strong> Mission timeline and self-healing checkpoints.
+            </p>
+            <div class="nature-journal-logo-box">
+              <img src="../../assets/logos/aiaa-logo.png" alt="AIAA logo" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Nature Methods Section -->
+        <section class="nature-protocol-section">
+          <div class="nature-protocol-header">
+            <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--nj-red);">
+              EXPERIMENTAL PROTOCOLS &amp; RIGOR
+            </span>
+            <h3 class="nature-protocol-title">Nature Methods: Experimental Standards &amp; Testbeds</h3>
+            <p style="margin: 0; color: var(--nj-text-muted); font-size: 0.95rem;">
+              Reproducible simulation-to-reality pipelines and empirical benchmark protocols adopted across our investigations.
             </p>
           </div>
-          <div class="collaboration-list">
-            <article class="collaboration-card">
-              <h3>Academic Partnerships</h3>
-              <p>
-                Joint investigations into collective intelligence, emergent behaviors, and adaptive control with robotics institutes across Asia and Europe.
-              </p>
-            </article>
-            <article class="collaboration-card">
-              <h3>Healthcare &amp; Assistive Technology</h3>
-              <p>
-                Translational research with medical device groups to deploy cloud-connected assistive platforms in clinical pilots.
-              </p>
-            </article>
-            <article class="collaboration-card">
-              <h3>Aerospace Systems</h3>
-              <p>
-                Sensor reliability, physiological monitoring, and mission assurance studies for aerospace consortia and multi-agency programs.
-              </p>
-            </article>
+
+          <div class="nature-protocol-grid">
+            <div class="nature-protocol-col">
+              <h4><i class="fa-solid fa-cube" style="color:var(--nj-red);"></i> Simulation Fidelity</h4>
+              <ul>
+                <li><strong>Physics Engines:</strong> ROS 2 Humble/Iron with Gazebo Fortress and Webots co-simulation for multi-agent contact mechanics.</li>
+                <li><strong>Synthetic Pheromone Fields:</strong> Continuous 2D/3D reaction-diffusion PDE solvers integrated as ROS 2 costmap plugins.</li>
+                <li><strong>Domain Randomization:</strong> Varied terrain friction (&mu; = 0.2 to 0.9), dynamic optical illumination shifts, and simulated sensor noise.</li>
+              </ul>
+            </div>
+
+            <div class="nature-protocol-col">
+              <h4><i class="fa-solid fa-microchip" style="color:var(--nj-red);"></i> Hardware Benchmarks</h4>
+              <ul>
+                <li><strong>Edge Compute:</strong> NVIDIA Jetson Orin Nano, Raspberry Pi 5, and custom STM32 motor co-processors.</li>
+                <li><strong>Event Sensors:</strong> Prophesee Gen4.1 HD event-based vision sensors coupled with 9-axis micro-IMUs.</li>
+                <li><strong>Power Profiling:</strong> Real-time INA219 current shunt monitors measuring sub-milliwatt idle and locomotion power profiles.</li>
+              </ul>
+            </div>
+
+            <div class="nature-protocol-col">
+              <h4><i class="fa-solid fa-chart-line" style="color:var(--nj-red);"></i> Validation Envelopes</h4>
+              <ul>
+                <li><strong>Absolute Trajectory Error (ATE):</strong> Monitored via OptiTrack 12-camera motion capture ground truth (sub-millimeter precision).</li>
+                <li><strong>Swarm Scalability:</strong> Validated across cohorts ranging from 1 to 50 agent nodes in dynamic maze arenas.</li>
+                <li><strong>Fault Injection:</strong> Benchmarked under 20% to 50% agent communication loss and sensor failure rates.</li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+      </div>
     </main>
 
-    <footer class="footer">
-      <div class="container footer__content">
-        <p>&copy; <span id="year"></span> Chandan Sheikder. All rights reserved.</p>
-        <a href="#top">Back to top ↑</a>
+    <!-- Interactive Lightbox Modal -->
+    <div id="nature-modal" class="nature-modal" role="dialog" aria-modal="true">
+      <div class="nature-modal-content">
+        <button id="nature-modal-close" class="nature-modal-close" aria-label="Close image modal">&times;</button>
+        <img id="nature-modal-img" class="nature-modal-img" src="" alt="High resolution scientific diagram" />
+        <div class="nature-modal-info">
+          <h3 id="nature-modal-title" class="nature-modal-title">Scientific Figure</h3>
+          <p id="nature-modal-caption" class="nature-modal-caption"></p>
+          <a id="nature-modal-doi" href="#" target="_blank" class="nature-btn-doi" style="display:none;">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> View Source Publication
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nature Footer -->
+    <footer class="nature-footer">
+      <div class="container nature-footer-inner">
+        <div>
+          &copy; 2026 Chandan Sheikder. Bio-Robotics &amp; Autonomous Systems Laboratory.
+        </div>
+        <div class="nature-footer-links">
+          <a href="../../index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications</a>
+          <a href="https://scholar.google.com/citations?user=UWNJ6TwAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </div>
       </div>
     </footer>
 
-    <script src="../config/site-config.js" defer></script>
-    <script src="../config/seo-config.js" defer></script>
-    <script src="../scripts/main.js" defer></script>
-    <script src="../scripts/analytics.js" defer></script>
+    <script src="../scripts/nature-journal.js" defer></script>
   </body>
 </html>
