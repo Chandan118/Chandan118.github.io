@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <circle cx="200" cy="200" r="190" fill="#1b2a75"/>
+  <circle cx="200" cy="200" r="120" fill="#ffffff"/>
+  
+  <polygon points="85,200 150,120 200,200" fill="#1b2a75"/>
+  <polygon points="200,200 250,280 315,200" fill="#1b2a75"/>
+  
+  <text x="80" y="160" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="900" font-size="65" fill="white" transform="rotate(-40 80 160)">T</text>
+  <text x="140" y="90" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="900" font-size="65" fill="white" transform="rotate(-15 140 90)">N</text>
+  <text x="220" y="90" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="900" font-size="65" fill="white" transform="rotate(15 220 90)">D</text>
+  <text x="290" y="150" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="900" font-size="65" fill="white" transform="rotate(40 290 150)">T</text>
+</svg>
