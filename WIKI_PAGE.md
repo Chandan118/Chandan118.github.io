@@ -20,7 +20,7 @@ Welcome to the Chandan_Sheikder wiki. This page mirrors the key details from the
 3) Neuromorphic Navigation for Autonomous Robots. (2025) — Device (Cell Press).  
 4) Autonomous Space Exploration, Interplanetary Communication Latency, Ethical AI Protocols, Machine Learning in Extreme Environments. (2025) — Accepted Q1 journal.  
 5) A Neuromorphic Framework for Bio-Inspired Navigation in Autonomous Robots. (2025) — Cell Reports Physical Science, 1st revision.  
-6) Bio-inspired and Soft Robotics for Autonomous Wind Energy Operations: A Comprehensive Review. (2025) — Submitted to Renewable and Sustainable Energy Reviews.  
+6) Bio-inspired and Soft Robotics for Autonomous Wind Energy Operations: A Comprehensive Review. (2026) — Renewable and Sustainable Energy Reviews (Elsevier, Vol. 240, 117172). https://www.sciencedirect.com/science/article/abs/pii/S1364032126004715  
 7) Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots in Dynamic Environments. (2025) — Submitted to Robotics and Autonomous Systems (preprint: Authorea).  
 8) Towards the Wearable Cardiorespiratory Sensors for Aerospace Applications. (2025) — https://doi.org/10.58940/2329-258X.2009  
 9) Assessing Cognitive Workload in Air Traffic Management using Cardiorespiratory Sensor: A Performance Evaluation. (2023) — https://doi.org/10.35248/2168-9792.23.12.316  

@@ -93,10 +93,10 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["Soft robotics", "Wind energy", "Review"],
       tagsZh: ["柔性机器人", "风能", "综述"],
       type: "Journal",
-      year: "2025",
+      year: "2026",
       image: "assets/images/Bio-inspired and Soft Robotics for Autonomous Wind Energy Operations.png",
       alt: "Soft robotics for wind energy operations overview",
-      link: "mailto:chandan@bit.edu.cn",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S1364032126004715",
     },
     {
       title: "Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots",

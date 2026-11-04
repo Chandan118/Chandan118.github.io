@@ -36,7 +36,7 @@
 - 2025: Neuromorphic Navigation for Autonomous Robots. Device (Cell Press).
 - 2025: Autonomous Space Exploration, Interplanetary Communication Latency, Ethical AI Protocols, Machine Learning in Extreme Environments. Accepted Q1 journal.
 - 2025: A Neuromorphic Framework for Bio-Inspired Navigation in Autonomous Robots. Cell Reports Physical Science, first revision.
-- 2025: Bio-inspired and Soft Robotics for Autonomous Wind Energy Operations: A Comprehensive Review. Submitted to Renewable and Sustainable Energy Reviews.
+- 2026: Bio-inspired and Soft Robotics for Autonomous Wind Energy Operations: A Comprehensive Review. Renewable and Sustainable Energy Reviews (Elsevier, Vol. 240, 117172). DOI: https://doi.org/10.1016/j.rser.2026.117172
 - 2025: Soft Computing Techniques Applied to Adaptive Hybrid Navigation Methods for Tethered Robots in Dynamic Environments. Submitted to Robotics and Autonomous Systems (preprint: Authorea).
 - 2025: Towards the Wearable Cardiorespiratory Sensors for Aerospace Applications. DOI: https://doi.org/10.58940/2329-258X.2009
 - 2023: Assessing Cognitive Workload in Air Traffic Management using Cardiorespiratory Sensor: A Performance Evaluation. DOI: https://doi.org/10.35248/2168-9792.23.12.316
