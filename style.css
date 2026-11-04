@@ -1,443 +1,448 @@
-/* ==========================================================================
-   Shuran Song Style Academic Portfolio CSS
-   Chandan Sheikder - Bio-Robotics Researcher
-   Reference: https://shurans.github.io/
-   ========================================================================== */
+/* CSS Reset: http://meyerweb.com/eric/tools/css/reset */
 
-/* CSS Reset */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    box-sizing: border-box;
 }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
 body {
-    line-height: 1.6;
-    background-color: #ffffff;
-    color: #333333;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
+    line-height: 1;
 }
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/**************************************************/
 
 #main {
-    max-width: 960px;
-    width: 100%;
+    width: 960px;
     margin: 0px auto;
-    padding: 0 20px 60px 20px;
-    background-color: #ffffff;
 }
 
-/* Header & Navigation Bar (Exact Shuran Song Layout) */
+#body{
+    font-family: roboto, sans-serif;
+    color: #a0a8b0;
+    /*color: #191e3f;*/
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #4a85c8;
+}
+
+a:hover {
+    border-bottom: 1px solid #4a85c8;
+}
+
+i {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 30px auto 20px 30px;
+    color: #003373;
+}
+
+/**************************************************/
+
 #header {
     height: 58px;
     font-size: 14px;
     line-height: 58px;
-    padding-top: 35px;
+    padding-top: 42px;
     text-align: right;
-    border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-right: 30px;
 }
 
 #header a {
     text-decoration: none;
     border-bottom: none;
-    color: #666666;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    transition: color 0.2s ease;
+    color: #a0a8b0;
 }
 
 #header a:hover {
-    color: #003373;
-    border-bottom: 2px solid #003373;
+    color: #4a85c8;
 }
 
-#header a.active {
-    color: #003373;
-    font-weight: 700;
-}
+/**************************************************/
 
-/* Profile Section */
 #profile {
-    padding: 25px 0px 30px 0px;
-    border-bottom: 1px solid #e0e0e0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    align-items: flex-start;
+    padding: 30px 30px 10px 30px;
+    border-bottom: 1px solid #ddd;
 }
 
 #profile-pic {
-    width: 220px;
-    flex-shrink: 0;
+    float: left;
+    margin-right: 40px;
     text-align: center;
 }
 
 #profile img {
     width: 220px;
-    height: auto;
     border-radius: 10px;
-    margin-bottom: 16px;
-    display: block;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-#profile-pic p {
-    font-size: 13px;
-    line-height: 20px;
-    color: #666666;
-}
-
-#profile-pic a {
-    color: #4a85c8;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-#profile-pic a:hover {
-    color: #003373;
-    border-bottom: 1px solid #003373;
-}
-
-#profile-intro {
-    flex: 1;
-    min-width: 300px;
+    margin-bottom: 18px;
 }
 
 #profile-name {
-    font-size: 28px;
-    line-height: 32px;
-    margin-bottom: 18px;
-    color: #003373;
-    font-weight: 700;
-}
-
-#profile-intro p {
-    font-size: 14.5px;
+    font-size: 24px;
     line-height: 24px;
-    color: #333333;
-    margin-bottom: 16px;
-}
-
-#profile-intro a {
-    color: #4a85c8;
-    text-decoration: none;
-}
-
-#profile-intro a:hover {
+    margin-bottom: 20px;
     color: #003373;
-    border-bottom: 1px solid #003373;
 }
 
-/* Horizontal Paper Visual Slider */
+#profile p {
+    margin-bottom: 20px;
+}
+
+/**************************************************/
+
 .recent-work {
-    height: 215px;
-    width: 100%;
-    padding-bottom: 20px;
-    overflow-x: auto;
+    height: 200px;
+    width: 900px;
+    padding-bottom: 35px;
+    overflow-x: scroll;
     overflow-y: hidden;
-    margin: 30px 0;
+    margin: 30px auto 30px 30px;
 }
 
 .slider {
-    display: flex;
-    gap: 16px;
-    width: max-content;
-}
-
-.slider a {
-    display: block;
-    border: none;
+    width: 2200px;
 }
 
 .slider a:hover {
-    border: none;
+    border: none
 }
 
 .slider img {
-    height: 195px;
-    width: auto;
-    max-width: 340px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 205px;
+    border-radius: 10px;
+    margin-right: 20px;
 }
 
-.slider img:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+.slider video {
+    height: 205px;
+    border-radius: 10px;
+    margin-right: 20px;
 }
 
 .recent-work::-webkit-scrollbar {
-    height: 7px;
+    background: none;
+    height: 8px;
 }
 
 .recent-work::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #eee;
     border-radius: 4px;
+    margin-left: 240px;
+    margin-right: 240px;
 }
 
 .recent-work::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
+    background: #ccc;
     border-radius: 4px;
 }
 
 .recent-work::-webkit-scrollbar-thumb:hover {
-    background: #94a3b8;
+    background: #999;
 }
 
-/* Divider & Section Headers */
+/**************************************************/
+
 .divider {
     width: 100%;
-    border-bottom: 1px solid #e0e0e0;
-    margin: 28px 0;
+    border-bottom: 1px solid #ddd;
 }
 
-.section {
-    margin-bottom: 35px;
+/**************************************************/
+
+ul {
+    font-size: 14px;
+    line-height: 24px;
+    list-style-position: inside;
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    color: #a0a8b0;
 }
 
-h1,
-h2 {
-    font-size: 22px;
-    line-height: 26px;
+.showBtn {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    float: left;
+}
+
+.showBtn a {
     color: #003373;
-    font-weight: 700;
+    cursor: pointer;
+}
+
+.showBtn a:hover {
+    border-bottom: 1px solid #003373;
+}
+
+#moreNews {
+    display: none;
+}
+
+#lessNewsBtn {
+    display: none;
+}
+
+#moreTalks {
+    display: none;
+}
+
+#lessTalksBtn {
+    display: none;
+}
+
+/**************************************************/
+
+
+h3 {
+    margin-left:  30px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom:  15px;
+}
+
+#repBtn {
+    color: #49bf9d;
+    display: inline;
+    text-decoration: none;
+    border-bottom: 1px solid #a4dfce;
+}
+
+#repBtn a {
+    color: inherit;
+}
+
+#repBtn a:hover {
+    color: #49bf9d;
+}
+
+#showAllBtn {
+    color: #191e3f;
+    display: inline;
+    text-decoration: none;
+}
+
+#showAllBtn a {
+    color: inherit;
+}
+
+#showAllBtn a:hover {
+    color: #49bf9d;
+}
+
+/**************************************************/
+
+.research {
+    /*padding: 30px;*/
+    /*padding-bottom: 30px;*/
+}
+
+
+.research-proj {
+    margin-left: 30px;
+    width: 100%;
+    display: table;
+
+}
+
+.nonRep {
+    display:  none;
+}
+
+
+.research-thumb {
+    width: 180px;
+    float: left;
+    margin-top: 7px;
+    padding-right: 30px;
     margin-bottom: 20px;
 }
 
-/* News List */
-ul.news-list {
-    list-style: disc inside;
-    margin-bottom: 25px;
-}
-
-ul.news-list li {
-    font-size: 14.5px;
-    line-height: 24px;
-    color: #333333;
-    margin-bottom: 12px;
-}
-
-.date {
-    font-weight: 700;
-    color: #003373;
-    margin-right: 8px;
-}
-
-/* Publications List (Exact Shuran Song Layout) */
-.research-proj {
-    width: 100%;
-    display: flex;
-    gap: 25px;
-    margin-bottom: 26px;
-    align-items: flex-start;
-}
-
-.research-thumb {
-    width: 190px;
-    min-width: 190px;
-    flex-shrink: 0;
-    display: block;
-    text-decoration: none;
-    border: none;
-}
-
 .research-thumb:hover {
-    border: none;
+    border-bottom: none;
 }
 
 .research-thumb img {
     width: 100%;
-    height: 125px;
-    object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    background-color: #ffffff;
-    display: block;
-    transition: transform 0.2s ease;
+    border-radius: 5px;
 }
 
-.research-thumb:hover img {
-    transform: scale(1.02);
+.research-thumb video {
+  margin-top: 0.4em;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
 }
-
-.research-proj-content {
-    flex: 1;
-}
-
 .research-proj-title {
-    display: inline-block;
+    display: block;
+    margin-left: 210px;
     color: #003373;
     font-size: 16px;
-    line-height: 22px;
-    font-weight: 600;
-    text-decoration: none;
-    margin-bottom: 4px;
-    transition: color 0.2s;
+    line-height: 26px;
 }
 
 .research-proj-title:hover {
-    color: #4a85c8;
-    border-bottom: 1px solid #4a85c8;
-}
-
-.research-proj p {
-    font-size: 14px;
-    line-height: 22px;
-    color: #555555;
-    margin: 0;
-}
-
-.research-proj p strong {
-    color: #111827;
-    font-weight: 600;
-}
-
-.research-proj p em {
-    color: #222222;
-    font-style: italic;
-}
-
-.research-proj a {
-    color: #4a85c8;
-    text-decoration: none;
-}
-
-.research-proj a:hover {
-    color: #003373;
     border-bottom: 1px solid #003373;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #profile {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.research-proj p {
+    margin-left: 210px;
+    font-size: 14px;
+    line-height: 24px;
+}
 
-    #profile-pic {
-        margin-right: 0;
-    }
+.research-proj p strong {
+    color: #fdc450;
+    font-weight: 700;
+}
 
-    .research-proj {
-        flex-direction: column;
-    }
+#morePubs {
+    display: none;
+}
 
-    .research-thumb {
-        width: 100%;
-        max-width: 300px;
-    }
+#morePubsBtn {
+    margin-left: 30px;
+}
 
-    .research-thumb img {
-        height: auto;
-        aspect-ratio: 16/9;
-    }
+#lessPubsBtn {
+    display: none;
+    margin-left: 30px;
+}
 
-    #header {
-        text-align: center;
-        padding-right: 0;
-    }
+/**************************************************/
+
+.sponsors {
+    margin-bottom: 120px;
+}
+
+.sponsors h1 {
+    margin-bottom: 0px;
+}
+
+.sponsor-thumb img {
+    margin-left: 20px;
+    height: 100px;
+}
+
+.sponsor-thumb a:hover {
+    border: none;
+}
+
+/**************************************************/
+
+.people {
+    padding-left: 30px;
+}
+
+.student-profile {
+    width: 125px;
+    float: left;
+    text-align: center;
+    margin: 0 30px 30px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.student-profile p {
+    color: #003373;
+}
+
+.student-profile p a {
+    color: #003373;
+}
+
+.student-profile p a:hover {
+    border-bottom: 1px solid #003373;
+}
+
+.student-profile img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.alternating-thumb {
+    position: relative;
+    display: block;
+    aspect-ratio: 4/3;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.alternating-thumb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.alternating-thumb .img-logo {
+    animation: fadeCycleLogo 10s infinite;
+}
+.alternating-thumb .img-figure {
+    opacity: 0;
+    animation: fadeCycleFigure 10s infinite;
+}
+
+@keyframes fadeCycleLogo {
+    0%, 45% { opacity: 1; }
+    50%, 95% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeCycleFigure {
+    0%, 45% { opacity: 0; }
+    50%, 95% { opacity: 1; }
+    100% { opacity: 0; }
 }
